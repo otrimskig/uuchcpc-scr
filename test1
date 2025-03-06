@@ -1,0 +1,43 @@
+#!/bin/bash
+#SBATCH --job-name=go_fast
+#SBATCH --ntasks=15
+#SBATCH --mem=42gb
+#SBATCH --time=1:00:00
+#SBATCH --partition=lonepeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/outs/slurm-%j.out
+
+
+
+start_time=$(date +%s)
+
+echo "$(date "+%Y-%m-%d %H:%M:%S") : started job "
+
+
+cd /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo "$(date "+%Y-%m-%d %H:%M:%S") : ended job "
+
+end_time=$(date +%s)
+runtime=$((end_time - start_time))
+hours=$((runtime / 3600))
+minutes=$(( (runtime % 3600) / 60 ))
+seconds=$((runtime % 60))
+
+echo "Runtime: $hours:$minutes:$seconds"
+

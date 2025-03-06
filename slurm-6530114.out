@@ -1,0 +1,6 @@
+start of job at 2024-05-08 15:23:25 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530114/slurm_script: line 18: cd: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/23908R/Fastq: No such file or directory
+started compression of *.fastq at 2024-05-08 15:23:26 
+pigz: skipping: *.fastq does not exist
+finished compressing.
+end of job at 2024-05-08 15:23:26 

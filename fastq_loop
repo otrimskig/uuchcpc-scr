@@ -1,0 +1,40 @@
+#!/bin/bash
+#SBATCH --job-name=fast_pigz
+#SBATCH --ntasks=20
+#SBATCH --mem=42gb
+#SBATCH --time=10:00:00
+#SBATCH --partition=lonepeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+
+
+echo "start of job at $(date "+%Y-%m-%d %H:%M:%S") "
+
+
+module load pigz
+
+
+cd /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/23908R/Fastq
+
+
+
+for file in *.fastq; do
+
+	echo "started compression of $file at $(date "+%Y-%m-%d %H:%M:%S") "
+
+
+pigzip "$file";
+
+
+echo "finished compressing."
+
+done
+
+
+
+
+
+
+
+echo "end of job at $(date "+%Y-%m-%d %H:%M:%S") "

@@ -1,0 +1,37 @@
+#!/bin/bash
+#SBATCH --job-name=stargo
+#SBATCH --ntasks=40
+#SBATCH --mem=50gb
+#SBATCH --time=32:00:00
+#SBATCH --partition=lonepeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/outs/slurm-%j.out
+
+#create start timestamps.
+start_time=$(date +%s)
+echo "$(date "+%Y-%m-%d %H:%M:%S") : started job "
+
+
+module load star
+
+STAR --runThreadN 40 \
+--runMode genomeGenerate \
+--genomeDir starGRCm39_50bp \
+--genomeFastaFiles /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/Mus_musculus.GRCm39.dna.primary_assembly.fa \
+--sjdbGTFfile /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/Mus_musculus.GRCm39.111.gtf \
+--sjdbOverhang 49
+
+
+
+##########finish
+echo "$(date "+%Y-%m-%d %H:%M:%S") : ended job "
+
+end_time=$(date +%s)
+runtime=$((end_time - start_time))
+hours=$((runtime / 3600))
+minutes=$(( (runtime % 3600) / 60 ))
+seconds=$((runtime % 60))
+
+echo "Runtime: $hours:$minutes:$seconds"

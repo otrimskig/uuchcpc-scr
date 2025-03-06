@@ -1,0 +1,11 @@
+ArrayTaskID	SampleName
+1	Bobby
+2	Ben
+3	Amelia
+4	George
+5	Arthur
+6	Betty
+7	Julia
+8	Fred
+9	Steve
+10	Emily

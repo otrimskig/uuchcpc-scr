@@ -1,0 +1,70 @@
+#!/bin/bash
+#SBATCH --job-name=fast_pigz
+#SBATCH --ntasks=20
+#SBATCH --mem=42gb
+#SBATCH --time=10:00:00
+#SBATCH --partition=lonepeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+
+
+#can do this on interactive node without even using slurm.
+
+
+exp_folder="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/25622R"
+
+cd "$exp_folder"
+
+
+
+# Find and move files that are not .fastq.gz
+find fastq_files -type f ! -name '*.fastq.gz' -exec mv {} /gnomex \;
+
+
+#with the experiment folder as the working directory,
+#rename the stupid single-digit sample numbers to add
+#a leading zero.
+
+
+for file in fastq_files/*.fastq.gz; do
+    # Extract the filename (without the path)
+    filename=$(basename "$file")
+
+    # Apply regex on the filename
+    if [[ $filename =~ ^(25622X)([1-9])_ ]]; then
+        # Construct the new filename by adding a leading zero
+        new_filename="${BASH_REMATCH[1]}0${BASH_REMATCH[2]}_${filename#*_}"
+
+        # Rename the file with the full path
+        mv "$file" "fastq_files/$new_filename"
+    fi
+done
+
+
+
+
+# Define the directory containing the files
+fastq_dir="$exp_folder""/fastq_files"
+
+# Define the output file
+output_file="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/configs/config3.txt"
+
+# Write the header to the output file
+echo -e "ArrayTaskID\tFileName" > "$output_file"
+
+# Initialize counter
+counter=1
+
+# Iterate over all files in the directory and append to the output
+for file in "$fastq_dir"/*.fastq.gz; do
+    # Extract the filename without the path
+    filename=$(basename "$file")
+    # Append the counter and filename to the output file
+    echo -e "$counter\t$filename" >> "$output_file"
+    # Increment the counter
+    counter=$((counter + 1))
+done
+
+# Display the generated file
+cat "$output_file"

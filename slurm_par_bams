@@ -1,0 +1,83 @@
+#!/bin/bash
+#SBATCH --job-name=slupa
+#SBATCH --array=1-16
+#SBATCH --ntasks=20
+#SBATCH --mem=30gb
+#SBATCH --time=0:40:00
+#SBATCH --partition=lonepeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/outs/slurm-%j_%a.out
+
+#create start timestamps.
+start_time=$(date +%s)
+echo "$(date "+%Y-%m-%d %H:%M:%S") : started job "
+echo -e "\n"
+
+#load modules
+module load samtools
+
+#set working directory path
+cd /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/
+
+#specify config file
+config=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/configs/config2.txt
+
+
+#define directory path variables
+directory1="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R1/bams/"
+
+directory2="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/bams/"
+
+output_directory="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R_merged/"
+
+sample_number=$(awk -v ArrayTaskID=$SLURM_ARRAY_TASK_ID '$1==ArrayTaskID {print $2}' $config)
+sample_number=$(echo "$sample_number" | sed 's/\r$//')
+
+
+echo "array task ID: $SLURM_ARRAY_TASK_ID" 
+echo "sample_number: $sample_number" 
+echo "directory 1: $directory1"
+echo "directory 2: $directory2"
+echo -e "\n\n"
+
+bam1=$(find "$directory1" -name "${sample_number}*.bam")
+
+bam2=$(find "$directory2" -name "${sample_number}*.bam")
+
+echo "bam file 1: $bam1" 
+echo "bam file 2: $bam2"
+echo -e "\n\n"
+
+output_file="${output_directory}${sample_number}_merged.bam"
+echo "output file: $output_file"
+echo -e "\n\n"
+
+
+echo "$(date "+%Y-%m-%d %H:%M:%S") : merging $bam1 and $bam2"
+echo "$(date "+%Y-%m-%d %H:%M:%S") : writing to $output_file"
+
+
+samtools merge -@ 20 "$bam1" "$bam2" -o "$output_file"
+
+echo -e "\n\n\n"
+echo "$(date "+%Y-%m-%d %H:%M:%S") : indexing $output_file"
+
+
+samtools index "$output_file"
+
+
+echo "$(date "+%Y-%m-%d %H:%M:%S") : done"
+echo -e "\n\n\n"
+
+
+echo "$(date "+%Y-%m-%d %H:%M:%S") : ended job "
+
+end_time=$(date +%s)
+runtime=$((end_time - start_time))
+hours=$((runtime / 3600))
+minutes=$(( (runtime % 3600) / 60 ))
+seconds=$((runtime % 60))
+
+echo "Runtime: $hours:$minutes:$seconds"

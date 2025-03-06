@@ -1,0 +1,180 @@
+#!/bin/bash
+#SBATCH --job-name=stargo
+#SBATCH --ntasks=50
+#SBATCH --mem=50gb
+#SBATCH --time=32:00:00
+#SBATCH --partition=lonepeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/outs/slurm-%j.out
+
+
+
+#create start timestamps.
+start_time=$(date +%s)
+echo "$(date "+%Y-%m-%d %H:%M:%S") : started job "
+
+
+# Define the directory path
+#leave out "fastq_files" folder name.
+directory="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/25622R/"
+
+cd ${directory}
+
+
+#load modules
+module load star
+module load fastqc
+module load samtools
+
+echo ""
+echo ""
+echo ""
+
+
+
+
+
+# Loop through all .fastq files in the directory
+for fq_file1 in ${directory}fastq_files/*R1_001.fastq; do
+    # Get the corresponding R2 file
+    fq_file2="${fq_file1/R1/R2}"
+
+    # Extract the common string
+    common_string=$(basename "$fq_file1" | sed 's/_R1_001\.fastq//')
+
+    # Add ".results" to the end of the common string
+    result_basename="${common_string}.results"
+
+    echo "$(date "+%Y-%m-%d %H:%M:%S") : Processing files:"
+    echo "R1: $fq_file1"
+    echo "R2: $fq_file2"
+    echo "Output will be written to: ${result_basename}"
+    echo ""
+
+    # Call the STAR module with the appropriate arguments
+    STAR \
+    --runThreadN 50 \
+    --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39 \
+    --genomeLoad LoadAndKeep \
+    --limitBAMsortRAM 50000000000 \
+    --readFilesIn "$fq_file1" "$fq_file2" \
+    --outSAMattributes Standard \
+    --outSAMtype BAM SortedByCoordinate \
+    --outFileNamePrefix "${result_basename}"
+
+
+    echo "$(date "+%Y-%m-%d %H:%M:%S") : Finished writing ${result_basename}.bam"
+echo ""
+echo ""
+
+done
+
+
+
+#fastqc on files
+for file in ${directory}fastq_files/*.fastq; do
+
+echo "$(date "+%Y-%m-%d %H:%M:%S") : performing fastQC on $file "
+fastqc "$file";
+done
+
+echo ""
+echo ""
+echo ""
+
+
+#index bam files
+for file in *.bam; do
+echo "$(date "+%Y-%m-%d %H:%M:%S") : indexing $file "
+samtools index "$file"
+
+done
+
+echo ""
+echo ""
+echo ""
+
+
+#############
+#clean up
+echo "$(date "+%Y-%m-%d %H:%M:%S") : cleaning up."
+
+
+#move star progress files
+echo "$(date "+%Y-%m-%d %H:%M:%S") : moving star progress logs."
+
+mkdir -p starprogressout
+
+#move temp files dir
+for dir in *STARtmp; do
+mv "$dir" starprogressout/;
+done
+
+#mv star progress files .out
+for file in *.out; do
+mv "$file" starprogressout/;
+done
+
+#mv star progress files .tab
+for file in *.tab; do
+mv "$file" starprogressout/;
+done
+
+
+
+
+
+echo "$(date "+%Y-%m-%d %H:%M:%S") : moving fastqc files."
+#add dir
+mkdir -p fastqc_files
+mkdir -p fastqc_files/htmls
+mkdir -p fastqc_files/zips
+
+#mv fastqc files htmls
+for file in fastq_files/*.html; do
+mv "$file" fastqc_files/htmls;
+done
+
+#mv fastq files zips
+for file in fastq_files/*.zip; do
+mv "$file" fastqc_files/zips;
+done
+
+
+
+
+
+echo "$(date "+%Y-%m-%d %H:%M:%S") : moving bam and bai files."
+#add dir
+mkdir -p bams
+
+#mv bais
+for file in *.bai; do
+mv "$file" bams
+done
+
+#mv bams
+for file in *.bam; do
+mv "$file" bams
+done
+
+
+
+echo ""
+echo ""
+echo ""
+
+
+
+##########finish
+echo "$(date "+%Y-%m-%d %H:%M:%S") : ended job "
+
+end_time=$(date +%s)
+runtime=$((end_time - start_time))
+hours=$((runtime / 3600))
+minutes=$(( (runtime % 3600) / 60 ))
+seconds=$((runtime % 60))
+
+echo "Runtime: $hours:$minutes:$seconds"

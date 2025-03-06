@@ -1,0 +1,31 @@
+#!/bin/bash
+#SBATCH --job-name=fastqc-go
+#SBATCH --ntasks=1
+#SBATCH --mem=32gb
+#SBATCH --time=4:20:00
+#SBATCH --partition=notchpeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+
+
+
+echo "start of job"
+
+cd /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/23908R/Fastq
+
+module load fastqc
+
+
+
+for i in *.fastq;
+do fastqc $i;
+done
+
+
+
+
+
+
+
+echo "end of job :)"

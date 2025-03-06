@@ -1,0 +1,56 @@
+#!/bin/bash
+#SBATCH --job-name=slupa
+#SBATCH --array=1-20
+#SBATCH --ntasks=10
+#SBATCH --mem=30gb
+#SBATCH --time=0:40:00
+#SBATCH --partition=lonepeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/outs/slurm-%j_%a.out
+
+
+
+#set array to num of instances in loop in SBATCH call.
+
+#create start timestamps.
+start_time=$(date +%s)
+echo "$(date "+%Y-%m-%d %H:%M:%S") : started job "
+echo "array task ID: $SLURM_ARRAY_TASK_ID"
+
+
+#specify config file
+#this file should consist of a column of numeric values, corresponding to the array ID,
+#and a column of variables to be set dynamically based on this id.
+#in this case, the name of the file to be unzipped.
+config=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/configs/config3.txt
+
+#set wd
+cd /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/25622R/fastq_files/
+
+
+#temp variable
+var=$(awk -v ArrayTaskID=$SLURM_ARRAY_TASK_ID '$1==ArrayTaskID {print $2}' $config)
+
+#set variable to be acted upon.
+gz_file=$(echo "$var" | sed 's/\r$//')
+
+
+echo ""
+echo "$(date "+%Y-%m-%d %H:%M:%S") : unzipping $gz_file"
+
+module load pigz
+unpigz "$gz_file"
+
+
+echo ""
+echo "$(date "+%Y-%m-%d %H:%M:%S") : ended job "
+
+end_time=$(date +%s)
+runtime=$((end_time - start_time))
+hours=$((runtime / 3600))
+minutes=$(( (runtime % 3600) / 60 ))
+seconds=$((runtime % 60))
+
+echo "Runtime: $hours:$minutes:$seconds"

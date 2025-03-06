@@ -1,0 +1,50 @@
+#!/bin/bash
+#SBATCH --job-name=fqc2
+#SBATCH --ntasks=1
+#SBATCH --mem=44gb
+#SBATCH --time=2:20:00
+#SBATCH --partition=notchpeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+
+
+
+echo "start of job"
+
+cd /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/23908R/Fastq
+
+module load fastqc
+
+
+echo "List all files ending in .fastq"
+files=$(ls *.fastq)
+
+echo "Filter files based on their name or position"
+filtered_files=""
+include=0
+for file in $files; do
+	    if [[ "$file" =~ ^23908X28_20240412 ]]; then
+		            include=1
+			        fi
+				    if [ "$include" -eq 1 ]; then
+					            filtered_files+=" $file"
+						        fi
+						done
+
+						echo "Perform operation (e.g., fastqc) on filtered files"
+						for file in $filtered_files; do
+							    fastqc "$file"
+						    done
+
+
+
+
+
+
+
+
+
+
+
+echo "end of job :)"

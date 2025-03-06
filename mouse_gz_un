@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --job-name=gzunzip
+#SBATCH --ntasks=1
+#SBATCH --mem=16gb
+#SBATCH --time=0:20:00
+#SBATCH --partition=notchpeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+
+
+
+echo "start of job"
+
+
+
+gunzip Mus_musculus.GRCm39.111.gtf.gz
+gunzip Mus_musculus.GRCm39.dna.primary_assembly.fa.gz
+
+
+
+
+echo "end of job :)"

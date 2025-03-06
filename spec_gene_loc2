@@ -1,0 +1,129 @@
+#!/bin/bash
+#SBATCH --job-name=spec_genes02
+#SBATCH --ntasks=1
+#SBATCH --mem=10gb
+#SBATCH --time=0:10:00
+#SBATCH --partition=notchpeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/outs/slurm-%j.out
+
+
+
+#create start timestamps.
+start_time=$(date +%s)
+echo "$(date "+%Y-%m-%d %H:%M:%S") : started job "
+
+cd "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/25622R"
+
+#load modules
+module load samtools
+module load bedtools
+module load bcftools
+
+echo ""
+echo ""
+echo ""
+
+# Set the directory containing BAM files and the output directory
+directory="bams"
+output_dir="spec_genes"
+# Create output directory if it doesn't exist
+mkdir -p "$output_dir"
+
+#set genome alignment reference file path. (If not indexed, index with [samtools faidx "$ref_file"])
+ref_file="/uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/Mus_musculus.GRCm39.dna.primary_assembly.fa"
+
+
+# Loop through all .bam files in the directory
+for bam_file in "${directory}"/*.bam; do
+
+    # Extract the base name without the .bam extension
+    base_name=$(basename "$bam_file" .bam)
+
+
+    #genome region
+    #region_name="cdkn2a"
+    #region="4:89190695-89214871"
+
+
+
+    #genome region
+    #region_name="braf"
+    #region="6:39580171-39702592"
+
+
+    #genome region
+    region_name="pten"
+    region="19:32734977-32803560"
+
+
+
+    echo "$(date "+%Y-%m-%d %H:%M:%S") : Subsetting bam file $base_name"
+
+    # Step 1: Extract reads for the specified region and save to the output directory
+    samtools view -b "$bam_file" "$region" > "${output_dir}/${base_name}_${region_name}.bam"
+
+echo ""
+echo ""
+echo ""
+
+    echo "$(date "+%Y-%m-%d %H:%M:%S") : Indexing subsetted bam file ${base_name}_${region_name}.bam"
+
+    # Index the region-specific BAM file
+    samtools index "${output_dir}/${base_name}_${region_name}.bam"
+
+echo ""
+echo ""
+echo ""
+
+    echo "$(date "+%Y-%m-%d %H:%M:%S") : Processing and filtering variants from subsetted bam file ${base_name}_${region_name}"
+
+    temp_pileup_file="${output_dir}/${base_name}_${region_name}_sam_pileup.txt"
+
+    samtools mpileup -f "$ref_file" -r "$region" "${output_dir}/${base_name}_${region_name}.bam" > "$temp_pileup_file"
+
+
+
+    echo "$(date "+%Y-%m-%d %H:%M:%S") : Finished processing $base_name_$region_name"
+    echo ""
+done
+
+echo "All BAM files have been processed."
+
+
+echo ""
+echo ""
+echo ""
+
+
+
+##########finish
+echo "$(date "+%Y-%m-%d %H:%M:%S") : ended job "
+
+end_time=$(date +%s)
+runtime=$((end_time - start_time))
+hours=$((runtime / 3600))
+minutes=$(( (runtime % 3600) / 60 ))
+seconds=$((runtime % 60))
+
+echo "Runtime: $hours:$minutes:$seconds"
+
+
+          # Step 2: Generate pileup and write to a temporary file
+    #temp_pileup_file="${output_dir}/${base_name}_pileup.txt"
+  #samtools mpileup -f "$ref_file" -r 11:79275001-79275144 "${output_dir}/${base_name}_region.bam" > "$temp_pileup_file"
+
+    #bcftools mpileup -f "$ref_file" -r 11:79275001-79275144 "${output_dir}/${base_name}_region.bam" | \
+    #bcftools call -mv -Ov -o "${output_dir}/${base_name}_variants.txt"
+
+    #bcftools filter -i 'TYPE="snp"' variants.vcf > snps.vcf
+    #bcftools filter -i 'TYPE="indel"' variants.vcf > indels.vcf
+    # Index the reference file (creates Mus_musculus.GRCm39.dna.primary_assembly.fa.fai)
+         #create list of all reads at location. call all variants
+    #bcftools mpileup -f "$ref_file" -d 1000 "${output_dir}/${base_name}_region.bam" | \
+    #bcftools call -mv -Ov -o "${output_dir}/${base_name}_variants_raw.vcf"
+
+    #filter variants
+    #bcftools filter -s LowQual -e 'QUAL<20 || DP>100' -Ov "${output_dir}/${base_name}_variants_raw.vcf" -o "${output_dir}/${base_name}_variants_fil.vcf"
