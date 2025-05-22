@@ -1,0 +1,17 @@
+2024-11-04 15:55:29 : started job 
+
+
+
+2024-11-04 15:55:32 : Processing file 23908X07_merged.bam - step 1
+[main_samview] region "chr11:79275001-79275144" specifies an invalid region or unknown reference. Continue anyway.
+2024-11-04 15:55:32 : Processing file 23908X07_merged.bam - step 2
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::fai_build3_core] Failed to open the file /path/to/reference.fa
+Failed to read from standard input: unknown file type
+2024-11-04 15:55:32 : Finished processing 23908X07_merged.bam
+
+
+
+
+2024-11-04 15:55:32 : ended job 
+Runtime: 0:0:3

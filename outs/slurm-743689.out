@@ -1,0 +1,9 @@
+start of job at date +%Y-%m-%d %H:%M:%S 
+started compression of 23908X10_20240412_LH00227_0067_A22KHYJLT3_S27_L003_R1_001.fastq at date +%Y-%m-%d %H:%M:%S 
+gzip: 23908X10_20240412_LH00227_0067_A22KHYJLT3_S27_L003_R1_001.fastq.gz already exists;	not overwritten
+finished compressing.
+started compression of 23908X10_20240412_LH00227_0067_A22KHYJLT3_S27_L003_R2_001.fastq at date +%Y-%m-%d %H:%M:%S 
+gzip: 23908X10_20240412_LH00227_0067_A22KHYJLT3_S27_L003_R2_001.fastq.gz already exists;	not overwritten
+finished compressing.
+started compression of 23908X11_20240412_LH00227_0067_A22KHYJLT3_S28_L003_R1_001.fastq at date +%Y-%m-%d %H:%M:%S 
+slurmstepd: error: *** JOB 743689 ON notch080 CANCELLED AT 2024-05-07T14:22:17 ***

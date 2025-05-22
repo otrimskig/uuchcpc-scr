@@ -1,0 +1,133 @@
+2024-08-19 12:36:41 : started job 
+
+
+
+2024-08-19 12:36:43 : Processing files:
+Output will be written to: SRR8223281.results
+
+	STAR --runThreadN 60 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39_50bp --genomeLoad LoadAndKeep --limitBAMsortRAM 50000000000 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223281.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR8223281.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 19 12:36:43 ..... started STAR run
+Aug 19 12:36:43 ..... loading genome
+Aug 19 12:36:44 ..... started mapping
+Aug 19 12:38:09 ..... finished mapping
+Aug 19 12:38:09 ..... started sorting BAM
+Aug 19 12:38:43 ..... finished successfully
+2024-08-19 12:38:45 : Finished writing SRR8223281.results.bam
+
+
+2024-08-19 12:38:45 : Processing files:
+Output will be written to: SRR8223282.results
+
+	STAR --runThreadN 60 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39_50bp --genomeLoad LoadAndKeep --limitBAMsortRAM 50000000000 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223282.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR8223282.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 19 12:38:45 ..... started STAR run
+Aug 19 12:38:45 ..... loading genome
+Aug 19 12:38:45 ..... started mapping
+Aug 19 12:40:49 ..... finished mapping
+Aug 19 12:40:49 ..... started sorting BAM
+Aug 19 12:41:56 ..... finished successfully
+2024-08-19 12:41:58 : Finished writing SRR8223282.results.bam
+
+
+2024-08-19 12:41:58 : Processing files:
+Output will be written to: SRR8223283.results
+
+	STAR --runThreadN 60 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39_50bp --genomeLoad LoadAndKeep --limitBAMsortRAM 50000000000 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223283.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR8223283.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 19 12:41:58 ..... started STAR run
+Aug 19 12:41:58 ..... loading genome
+Aug 19 12:41:58 ..... started mapping
+Aug 19 12:44:16 ..... finished mapping
+Aug 19 12:44:16 ..... started sorting BAM
+Aug 19 12:45:06 ..... finished successfully
+2024-08-19 12:45:08 : Finished writing SRR8223283.results.bam
+
+
+2024-08-19 12:45:08 : Processing files:
+Output will be written to: SRR8223308.results
+
+	STAR --runThreadN 60 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39_50bp --genomeLoad LoadAndKeep --limitBAMsortRAM 50000000000 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223308.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR8223308.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 19 12:45:08 ..... started STAR run
+Aug 19 12:45:08 ..... loading genome
+Aug 19 12:45:08 ..... started mapping
+Aug 19 12:46:44 ..... finished mapping
+Aug 19 12:46:45 ..... started sorting BAM
+Aug 19 12:47:17 ..... finished successfully
+2024-08-19 12:47:19 : Finished writing SRR8223308.results.bam
+
+
+2024-08-19 12:47:19 : Processing files:
+Output will be written to: SRR8223309.results
+
+	STAR --runThreadN 60 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39_50bp --genomeLoad LoadAndKeep --limitBAMsortRAM 50000000000 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223309.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR8223309.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 19 12:47:19 ..... started STAR run
+Aug 19 12:47:19 ..... loading genome
+Aug 19 12:47:19 ..... started mapping
+Aug 19 12:49:16 ..... finished mapping
+Aug 19 12:49:16 ..... started sorting BAM
+Aug 19 12:50:02 ..... finished successfully
+2024-08-19 12:50:04 : Finished writing SRR8223309.results.bam
+
+
+2024-08-19 12:50:04 : Processing files:
+Output will be written to: SRR8223310.results
+
+	STAR --runThreadN 60 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39_50bp --genomeLoad LoadAndKeep --limitBAMsortRAM 50000000000 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223310.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR8223310.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 19 12:50:04 ..... started STAR run
+Aug 19 12:50:04 ..... loading genome
+Aug 19 12:50:04 ..... started mapping
+Aug 19 12:52:14 ..... finished mapping
+Aug 19 12:52:14 ..... started sorting BAM
+Aug 19 12:52:51 ..... finished successfully
+2024-08-19 12:52:53 : Finished writing SRR8223310.results.bam
+
+
+
+
+
+2024-08-19 12:52:53 : removing STAR genome from shared memory
+	STAR --genomeLoad Remove
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 19 12:52:53 ..... started STAR run
+Aug 19 12:52:53 ..... loading genome
+
+EXITING because of FATAL ERROR: could not open genome file ./GenomeDir//genomeParameters.txt
+SOLUTION: check that the path to genome files, specified in --genomeDir is correct and the files are present, and have user read permsissions
+
+Aug 19 12:52:53 ...... FATAL ERROR, exiting
+
+
+
+2024-08-19 12:52:53 : skipping fastq on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223281.fastq 
+2024-08-19 12:52:53 : skipping fastq on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223282.fastq 
+2024-08-19 12:52:53 : skipping fastq on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223283.fastq 
+2024-08-19 12:52:53 : skipping fastq on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223308.fastq 
+2024-08-19 12:52:53 : skipping fastq on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223309.fastq 
+2024-08-19 12:52:53 : skipping fastq on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/50bp/fastq_files/SRR8223310.fastq 
+
+
+
+2024-08-19 12:52:53 : indexing SRR8223281.resultsAligned.sortedByCoord.out.bam 
+2024-08-19 12:53:14 : indexing SRR8223282.resultsAligned.sortedByCoord.out.bam 
+2024-08-19 12:53:47 : indexing SRR8223283.resultsAligned.sortedByCoord.out.bam 
+2024-08-19 12:54:18 : indexing SRR8223308.resultsAligned.sortedByCoord.out.bam 
+2024-08-19 12:54:38 : indexing SRR8223309.resultsAligned.sortedByCoord.out.bam 
+2024-08-19 12:55:01 : indexing SRR8223310.resultsAligned.sortedByCoord.out.bam 
+
+
+
+2024-08-19 12:55:28 : cleaning up.
+2024-08-19 12:55:28 : moving star progress logs.
+2024-08-19 12:55:28 : moving fastqc files.
+mv: cannot stat 'fastq_files/*.html': No such file or directory
+mv: cannot stat 'fastq_files/*.zip': No such file or directory
+2024-08-19 12:55:28 : moving bam and bai files.
+
+
+
+2024-08-19 12:55:28 : ended job 
+Runtime: 0:18:47

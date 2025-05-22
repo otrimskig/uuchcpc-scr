@@ -1,0 +1,27 @@
+2024-05-20 14:43:03 : started job 
+task ID: 2
+sample_number: 23908X17
+Directory 1: ./23908R1/bams/
+Directory 2: ./23908R2/bams/
+Sample Number: 23908X17
+bam file 1: 
+bam file 2: 
+output file: ./23908R_merged/23908X17_merged.bam
+
+
+
+
+2024-05-20 14:43:05 : merging  and 
+2024-05-20 14:43:05 : writing to ./23908R_merged/23908X17_merged.bam
+
+
+
+
+2024-05-20 14:43:05 : indexing ./23908R_merged/23908X17_merged.bam
+2024-05-20 14:43:05 : done
+
+
+
+
+2024-05-20 14:43:05 : ended job 
+Runtime: 0:0:2

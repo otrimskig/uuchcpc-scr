@@ -1,0 +1,10 @@
+2024-08-12 19:25:44 : started job 
+2024-08-12 19:25:48 : re-compressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq 
+pigz: abort: write error on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq.gz (Inappropriate ioctl for device)
+
+
+
+2024-08-12 19:25:48 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq.gz
+gzip: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq already exists;	not overwritten
+2024-08-12 19:25:48 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq.gz
+slurmstepd: error: *** JOB 6846280 ON lp114 CANCELLED AT 2024-08-12T19:27:00 ***

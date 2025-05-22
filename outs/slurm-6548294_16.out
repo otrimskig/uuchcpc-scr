@@ -1,0 +1,21 @@
+2024-05-20 14:28:03 : started job 
+task ID: 16
+sample_number: 23908X31
+
+
+
+
+2024-05-20 14:28:05 : merging ./23908R1/bams/23908X31_20240412_LH00227_0067_A22KHYJLT3_S48_L003_R.resultsAligned.sortedByCoord.out.bam and ./23908R2/bams/23908X31_20240515_LH00227_0077_B22KK5WLT3_S88_L008.resultsAligned.sortedByCoord.out.bam
+2024-05-20 14:28:05 : writing to ./23908R_merged/23908X31_merged.bam
+
+
+
+
+2024-05-20 14:31:47 : indexing ./23908R_merged/23908X31_merged.bam
+2024-05-20 14:34:05 : done
+
+
+
+
+2024-05-20 14:34:05 : ended job 
+Runtime: 0:6:2

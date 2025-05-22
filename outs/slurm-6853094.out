@@ -1,0 +1,19 @@
+2024-08-19 10:58:11 : started job 
+	STAR --runThreadN 40 --runMode genomeGenerate --genomeDir starGRCm39_50bp --genomeFastaFiles /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/Mus_musculus.GRCm39.dna.primary_assembly.fa --sjdbGTFfile /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/Mus_musculus.GRCm39.111.gtf --sjdbOverhang 49
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 19 10:58:12 ..... started STAR run
+Aug 19 10:58:12 ... starting to generate Genome files
+Aug 19 10:59:17 ..... processing annotations GTF
+Aug 19 10:59:49 ... starting to sort Suffix Array. This may take a long time...
+Aug 19 11:00:06 ... sorting Suffix Array chunks and saving them to disk...
+Aug 19 11:12:59 ... loading chunks from disk, packing SA...
+Aug 19 11:18:57 ... finished generating suffix array
+Aug 19 11:18:57 ... generating Suffix Array index
+Aug 19 11:22:25 ... completed Suffix Array index
+Aug 19 11:22:26 ..... inserting junctions into the genome indices
+Aug 19 11:24:34 ... writing Genome to disk ...
+Aug 19 11:24:58 ... writing Suffix Array to disk ...
+Aug 19 11:28:07 ... writing SAindex to disk
+Aug 19 11:28:22 ..... finished successfully
+2024-08-19 11:28:23 : ended job 
+Runtime: 0:30:12

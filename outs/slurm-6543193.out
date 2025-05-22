@@ -1,0 +1,45 @@
+2024-05-17 11:20:06 : started job 
+Lmod has detected the following error: The following module(s) are unknown:
+"pigzip"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "pigzip"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+2024-05-17 11:20:11 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/*R1_001.gz
+gzip: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/*R1_001.gz: No such file or directory
+2024-05-17 11:20:11 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/*R2_001.gz
+gzip: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/*R2_001.gz: No such file or directory
+2024-05-17 11:20:11 : finished uncompressing. moving on to STAR.
+2024-05-17 11:20:11 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/*R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/*R2_001.fastq
+Output will be written to: *R1_001.fastq.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/*R1_001.fastq
+
+May 17 11:20:11 ...... FATAL ERROR, exiting
+2024-05-17 11:20:11 : Finished writing *R1_001.fastq.results.bam
+
+List all files ending in .fastq
+ls: cannot access '*.fastq': No such file or directory
+Filter files based on their name or position
+Perform operation (e.g., fastqc) on filtered files
+2024-05-17 11:20:11 : started compression of *.fastq 
+Skipping '*.fastq' which didn't exist, or couldn't be read
+pigz: skipping: *.fastq does not exist
+2024-05-17 11:20:12 : finished compressing.
+mv: missing destination file operand after 'fastqc_files/htmls'
+Try 'mv --help' for more information.
+mv: missing destination file operand after 'fastqc_files/zips'
+Try 'mv --help' for more information.
+
+
+
+2024-05-17 11:20:12 : ended job 
+Runtime: 0:0:6

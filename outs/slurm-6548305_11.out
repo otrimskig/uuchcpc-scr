@@ -1,0 +1,25 @@
+2024-05-20 14:28:03 : started job 
+task ID: 11
+sample_number: 23908X26
+
+
+
+
+2024-05-20 14:28:05 : merging  and 
+2024-05-20 14:28:05 : writing to ./23908R_merged/23908X26_merged.bam
+[E::hts_open_format] Failed to open file "" : No such file or directory
+samtools merge: fail to open "": No such file or directory
+
+
+
+
+2024-05-20 14:28:06 : indexing ./23908R_merged/23908X26_merged.bam
+[E::hts_open_format] Failed to open file "./23908R_merged/23908X26_merged.bam" : No such file or directory
+samtools index: failed to open "./23908R_merged/23908X26_merged.bam": No such file or directory
+2024-05-20 14:28:06 : done
+
+
+
+
+2024-05-20 14:28:06 : ended job 
+Runtime: 0:0:3

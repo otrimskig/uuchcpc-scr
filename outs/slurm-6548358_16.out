@@ -1,0 +1,34 @@
+2024-05-20 15:11:32 : started job 
+
+
+array task ID: 16
+sample_number: 23908X31
+directory 1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R1/bams/
+directory 2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/bams/
+
+
+
+bam file 1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R1/bams/23908X31_20240412_LH00227_0067_A22KHYJLT3_S48_L003_R.resultsAligned.sortedByCoord.out.bam
+bam file 2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/bams/23908X31_20240515_LH00227_0077_B22KK5WLT3_S88_L008.resultsAligned.sortedByCoord.out.bam
+
+
+
+output file: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R_merged/23908X31_merged.bam
+
+
+
+2024-05-20 15:11:35 : merging /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R1/bams/23908X31_20240412_LH00227_0067_A22KHYJLT3_S48_L003_R.resultsAligned.sortedByCoord.out.bam and /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/bams/23908X31_20240515_LH00227_0077_B22KK5WLT3_S88_L008.resultsAligned.sortedByCoord.out.bam
+2024-05-20 15:11:35 : writing to /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R_merged/23908X31_merged.bam
+[bam_merge] File '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R_merged/23908X31_merged.bam' exists. Please apply '-f' to overwrite. Abort.
+
+
+
+
+2024-05-20 15:11:35 : indexing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R_merged/23908X31_merged.bam
+2024-05-20 15:13:55 : done
+
+
+
+
+2024-05-20 15:13:55 : ended job 
+Runtime: 0:2:23

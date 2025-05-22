@@ -1,0 +1,16 @@
+2024-11-04 15:45:07 : started job 
+
+
+
+2024-11-04 15:45:09 : Processing file 23908X07_merged.bam - step 1
+[main_samview] region "chr1:1000000-1001000" specifies an invalid region or unknown reference. Continue anyway.
+2024-11-04 15:45:09 : Processing file 23908X07_merged.bam - step 2
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp119//job7140960/slurm_script: line 49: bcftools: command not found
+[E::fai_build3_core] Failed to open the file /path/to/reference.fa
+2024-11-04 15:45:09 : Finished processing 23908X07_merged.bam
+
+
+
+
+2024-11-04 15:45:09 : ended job 
+Runtime: 0:0:2

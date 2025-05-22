@@ -1,0 +1,18 @@
+2024-11-04 16:17:04 : started job 
+
+
+
+2024-11-04 16:17:19 : Processing file 23908X07_merged - step 1
+2024-11-04 16:17:19 : Indexing 23908X07_merged_region.bam
+2024-11-04 16:17:19 : Processing file 23908X07_merged - step 2
+[mpileup] 1 samples in 1 input files
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+Failed to read from spec_counts/23908X07_merged_pileup.txt: unknown file type
+2024-11-04 16:17:20 : Finished processing 23908X07_merged
+
+All BAM files have been processed.
+
+
+
+2024-11-04 16:17:20 : ended job 
+Runtime: 0:0:16

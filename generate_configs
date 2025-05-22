@@ -1,0 +1,53 @@
+#!/bin/bash
+#SBATCH --job-name=gencon
+#SBATCH --ntasks=1
+#SBATCH --mem=10gb
+#SBATCH --time=0:05:00
+#SBATCH --partition=lonepeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/outs/slurm-%j_%a.out
+
+
+#create start timestamps.
+start_time=$(date +%s)
+echo "$(date "+%Y-%m-%d %H:%M:%S") : started job "
+
+
+# Directory to find stuff to unzip
+loc="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/GSE185386/sc"
+
+#save config file which will be referenced in sub-jobs.
+config_dir="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/configs"
+
+# Output file path including SLURM job ID
+config_file="$config_dir/config_${SLURM_JOB_ID}.txt"
+
+
+# Write header
+echo -e "ArrayTaskID\tFileName" > "$config_file"
+
+# List .gz files and number them
+find "$loc" -maxdepth 1 -type f -name "*.gz" -printf "%p\n" | nl -w1 -s $'\t' >> "$config_file"
+#find "$loc" -maxdepth 1 -type f -name "*.gz" | nl -w1 -s $'\t' >> "$config_file"
+
+echo "Wrote file list to $config_file"
+
+
+
+
+
+
+
+
+echo ""
+echo "$(date "+%Y-%m-%d %H:%M:%S") : ended job "
+
+end_time=$(date +%s)
+runtime=$((end_time - start_time))
+hours=$((runtime / 3600))
+minutes=$(( (runtime % 3600) / 60 ))
+seconds=$((runtime % 60))
+
+echo "Runtime: $hours:$minutes:$seconds"

@@ -1,0 +1,7 @@
+date: extra operand ‘%T’
+Try 'date --help' for more information.
+start of job at 
+date: extra operand ‘%T’
+Try 'date --help' for more information.
+started compression of 23908X10_20240412_LH00227_0067_A22KHYJLT3_S27_L003_R1_001.fastq at 
+slurmstepd: error: *** JOB 743460 ON notch080 CANCELLED AT 2024-05-07T14:12:49 ***

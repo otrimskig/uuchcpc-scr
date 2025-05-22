@@ -1,0 +1,5 @@
+start of job at 2024-05-07 14:26:40 
+started compression of 23908X10_20240412_LH00227_0067_A22KHYJLT3_S27_L003_R1_001.fastq at 2024-05-07 14:26:40 
+finished compressing.
+started compression of 23908X10_20240412_LH00227_0067_A22KHYJLT3_S27_L003_R2_001.fastq at 2024-05-07 14:44:02 
+slurmstepd: error: *** JOB 743707 ON notch080 CANCELLED AT 2024-05-07T14:54:23 ***

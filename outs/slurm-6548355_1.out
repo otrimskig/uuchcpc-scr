@@ -1,0 +1,25 @@
+2024-05-20 15:07:56 : started job 
+
+
+array task ID: 1
+sample_number: 23908X16
+directory 1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R1/bams/
+directory 2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R1/bams/
+
+
+
+
+
+
+ls: cannot access '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R1/bams//23908X16'$'\r''*.bam': No such file or directory
+bam file 1: 
+bam file 2: 
+
+
+
+output file: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R_merged/23908X16_merged.bam
+
+
+
+2024-05-20 15:07:57 : ended job 
+Runtime: 0:0:1

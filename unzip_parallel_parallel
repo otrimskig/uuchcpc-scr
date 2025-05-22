@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --job-name=slupa
-#SBATCH --array=1-20
+#SBATCH --array=1-52
 #SBATCH --ntasks=10
 #SBATCH --mem=30gb
-#SBATCH --time=0:40:00
+#SBATCH --time=2:00:00
 #SBATCH --partition=lonepeak-guest
 #SBATCH --account=owner-guest
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=garrett.otrimski@hci.utah.edu
-#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/outs/slurm-%j_%a.out
+#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/outs/slurm-%j_%a.out
 
 
 
@@ -24,10 +24,11 @@ echo "array task ID: $SLURM_ARRAY_TASK_ID"
 #this file should consist of a column of numeric values, corresponding to the array ID,
 #and a column of variables to be set dynamically based on this id.
 #in this case, the name of the file to be unzipped.
-config=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/configs/config3.txt
+#config=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/configs/config3.txt
 
-#set wd
-cd /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/25622R/fastq_files/
+
+
+config="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/configs/config_7927141.txt"
 
 
 #temp variable

@@ -1,0 +1,10 @@
+2025-05-21 17:50:16 : started job 
+array task ID: 20
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp120//job7926166/slurm_script: line 40: : No such file or directory
+Wrote file list to /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/configs/config_7926166.txt
+
+2025-05-21 17:50:16 : unzipping 
+unpigz: skipping:  does not exist
+
+2025-05-21 17:50:17 : ended job 
+Runtime: 0:0:1

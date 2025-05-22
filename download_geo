@@ -1,0 +1,53 @@
+#!/bin/bash
+#SBATCH --job-name=tfr
+#SBATCH --ntasks=20
+#SBATCH --mem=30gb
+#SBATCH --time=0:30:00
+#SBATCH --partition=lonepeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/outs/slurm-%j.out
+
+
+echo "start of job at $(date "+%Y-%m-%d %H:%M:%S") "
+
+ACCESSION="GSE185386"
+DEST_DIR="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/transfers/${ACCESSION}"
+
+# Create destination directory if it doesn't exist
+mkdir -p "$DEST_DIR"
+
+
+
+# Check inputs
+if [[ -z "$ACCESSION" || -z "$DEST_DIR" ]]; then
+    echo "Usage: $0 GSE12345 /path/to/output_directory"
+    exit 1
+fi
+
+# Compute FTP URL prefix
+PREFIX="${ACCESSION:0:6}nnn"
+FTP_URL="https://ftp.ncbi.nlm.nih.gov/geo/series/${PREFIX}/${ACCESSION}/suppl/"
+
+
+
+# Get file list from FTP
+echo "Fetching file list from $FTP_URL ..."
+FILES=$(curl -s "$FTP_URL" | grep -oP 'href="\K[^"]+' | grep -v '^/')
+echo ""
+# Download each file
+for FILE in $FILES; do
+    echo "Downloading $FILE ..."
+    curl -# -o "${DEST_DIR}/${FILE}" "${FTP_URL}${FILE}"
+    echo ""
+done
+
+echo "Download complete. Files saved to: $DEST_DIR"
+
+echo "end of job at $(date "+%Y-%m-%d %H:%M:%S") "
+
+
+
+
+

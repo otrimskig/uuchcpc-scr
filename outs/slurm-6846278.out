@@ -1,0 +1,8 @@
+2024-08-12 19:20:13 : started job 
+2024-08-12 19:20:16 : re-compressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/*.fastq 
+pigz: skipping: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/*.fastq does not exist
+
+
+
+2024-08-12 19:20:16 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq.gz
+slurmstepd: error: *** JOB 6846278 ON lp114 CANCELLED AT 2024-08-12T19:22:13 ***

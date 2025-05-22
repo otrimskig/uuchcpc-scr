@@ -1,0 +1,432 @@
+2024-08-13 16:34:13 : started job 
+
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223281.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223281.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223282.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223282.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223283.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223283.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223284.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223284.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223285.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223285.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223286.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223286.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223287.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223287.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223288.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223288.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223289.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223289.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223290.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223290.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223291.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223291.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223292.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223292.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223293.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223293.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223294.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223294.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223295.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223295.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223296.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223296.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223297.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223297.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223298.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223298.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223299.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223299.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223300.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223300.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223301.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223301.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223302.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223302.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223303.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223303.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223304.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:15 ...... FATAL ERROR, exiting
+2024-08-13 16:34:15 : Finished writing SRR8223304.results.bam
+
+
+2024-08-13 16:34:15 : Processing files:
+Output will be written to: SRR8223305.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:16 ...... FATAL ERROR, exiting
+2024-08-13 16:34:16 : Finished writing SRR8223305.results.bam
+
+
+2024-08-13 16:34:16 : Processing files:
+Output will be written to: SRR8223306.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:16 ...... FATAL ERROR, exiting
+2024-08-13 16:34:16 : Finished writing SRR8223306.results.bam
+
+
+2024-08-13 16:34:16 : Processing files:
+Output will be written to: SRR8223307.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:16 ...... FATAL ERROR, exiting
+2024-08-13 16:34:16 : Finished writing SRR8223307.results.bam
+
+
+2024-08-13 16:34:16 : Processing files:
+Output will be written to: SRR8223308.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:16 ...... FATAL ERROR, exiting
+2024-08-13 16:34:16 : Finished writing SRR8223308.results.bam
+
+
+2024-08-13 16:34:16 : Processing files:
+Output will be written to: SRR8223309.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:16 ...... FATAL ERROR, exiting
+2024-08-13 16:34:16 : Finished writing SRR8223309.results.bam
+
+
+2024-08-13 16:34:16 : Processing files:
+Output will be written to: SRR8223310.results
+
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+Aug 13 16:34:16 ...... FATAL ERROR, exiting
+2024-08-13 16:34:16 : Finished writing SRR8223310.results.bam
+
+
+2024-08-13 16:34:16 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/fastq_files/SRR8223281.fastq 
+text/plain
+Started analysis of SRR8223281.fastq
+Approx 5% complete for SRR8223281.fastq
+Approx 10% complete for SRR8223281.fastq
+Approx 15% complete for SRR8223281.fastq
+Approx 20% complete for SRR8223281.fastq
+Approx 25% complete for SRR8223281.fastq
+Approx 30% complete for SRR8223281.fastq
+Approx 35% complete for SRR8223281.fastq
+Approx 40% complete for SRR8223281.fastq
+Approx 45% complete for SRR8223281.fastq
+Approx 50% complete for SRR8223281.fastq
+Approx 55% complete for SRR8223281.fastq
+Approx 60% complete for SRR8223281.fastq
+Approx 65% complete for SRR8223281.fastq
+Approx 70% complete for SRR8223281.fastq
+Approx 75% complete for SRR8223281.fastq
+Approx 80% complete for SRR8223281.fastq
+Approx 85% complete for SRR8223281.fastq
+Approx 90% complete for SRR8223281.fastq
+Approx 95% complete for SRR8223281.fastq
+Analysis complete for SRR8223281.fastq
+2024-08-13 16:35:35 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/fastq_files/SRR8223282.fastq 
+text/plain
+Started analysis of SRR8223282.fastq
+Approx 5% complete for SRR8223282.fastq
+Approx 10% complete for SRR8223282.fastq
+Approx 15% complete for SRR8223282.fastq
+Approx 20% complete for SRR8223282.fastq
+Approx 25% complete for SRR8223282.fastq
+Approx 30% complete for SRR8223282.fastq
+Approx 35% complete for SRR8223282.fastq
+Approx 40% complete for SRR8223282.fastq
+Approx 45% complete for SRR8223282.fastq
+Approx 50% complete for SRR8223282.fastq
+Approx 55% complete for SRR8223282.fastq
+slurmstepd: error: *** JOB 6847409 ON lp113 CANCELLED AT 2024-08-13T16:36:35 ***

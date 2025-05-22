@@ -1,0 +1,91 @@
+2024-05-17 11:27:22 : started job 
+2024-05-17 11:27:25 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz
+2024-05-17 11:30:39 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq.gz
+2024-05-17 11:33:54 : finished uncompressing. moving on to STAR.
+2024-05-17 11:33:54 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Output will be written to: 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+	STAR --runThreadN 20 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+	STAR version: 2.7.10a   compiled: 2022-07-20T09:12:46-06:00 notchpeak1:/uufs/chpc.utah.edu/sys/srcdir/STAR/STAR-2.7.10a/source
+May 17 11:33:54 ..... started STAR run
+May 17 11:33:54 ..... loading genome
+May 17 11:37:50 ..... started mapping
+May 17 11:46:58 ..... finished mapping
+May 17 11:47:00 ..... started sorting BAM
+May 17 11:49:25 ..... finished successfully
+2024-05-17 11:49:27 : Finished writing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results.bam
+
+2024-05-17 11:49:28 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+2024-05-17 11:54:44 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+2024-05-17 11:55:41 : finished compressing.
+2024-05-17 11:55:41 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+2024-05-17 12:00:57 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq 
+2024-05-17 12:01:55 : finished compressing.
+mv: missing destination file operand after 'fastqc_files/htmls'
+Try 'mv --help' for more information.
+mv: missing destination file operand after 'fastqc_files/htmls'
+Try 'mv --help' for more information.
+mv: missing destination file operand after 'fastqc_files/zips'
+Try 'mv --help' for more information.
+mv: missing destination file operand after 'fastqc_files/zips'
+Try 'mv --help' for more information.
+
+
+
+2024-05-17 12:01:55 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz
+2024-05-17 12:06:04 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq.gz
+2024-05-17 12:10:16 : finished uncompressing. moving on to STAR.
+2024-05-17 12:10:16 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Output will be written to: 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results
+	STAR --runThreadN 20 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results
+	STAR version: 2.7.10a   compiled: 2022-07-20T09:12:46-06:00 notchpeak1:/uufs/chpc.utah.edu/sys/srcdir/STAR/STAR-2.7.10a/source
+May 17 12:10:16 ..... started STAR run
+May 17 12:10:16 ..... loading genome
+slurmstepd: error: *** JOB 6543196 ON lp117 CANCELLED AT 2024-05-17T12:12:04 ***

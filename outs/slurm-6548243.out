@@ -1,0 +1,4 @@
+2024-05-20 13:15:38 : started job 
+2024-05-20 13:15:40 : merging ./23908R1/bams/23908X01_20240412_LH00227_0067_A22KHYJLT3_S18_L003_R.resultsAligned.sortedByCoord.out.bam and ./23908R2/bams/23908X01_20240515_LH00227_0077_B22KK5WLT3_S58_L008.resultsAligned.sortedByCoord.out.bam
+2024-05-20 13:15:40 : writing to ./23908R_merged/23908X01_merged.bam
+slurmstepd: error: *** JOB 6548243 ON lp114 CANCELLED AT 2024-05-20T13:18:05 ***

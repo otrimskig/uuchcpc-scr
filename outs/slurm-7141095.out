@@ -1,0 +1,17 @@
+2024-11-04 15:58:08 : started job 
+
+
+
+2024-11-04 15:58:12 : Processing file 23908X07_merged.bam - step 1
+2024-11-04 15:58:12 : Processing file 23908X07_merged.bam - step 2
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::idx_find_and_load] Could not retrieve index file for 'spec_counts//23908X07_merged_region.bam'
+[mpileup] fail to load index for spec_counts//23908X07_merged_region.bam
+Failed to read from standard input: unknown file type
+2024-11-04 15:58:36 : Finished processing 23908X07_merged.bam
+
+
+
+
+2024-11-04 15:58:36 : ended job 
+Runtime: 0:0:28

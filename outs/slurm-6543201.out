@@ -1,0 +1,1331 @@
+2024-05-17 12:40:52 : started job 
+2024-05-17 12:40:55 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz
+2024-05-17 12:43:46 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq.gz
+2024-05-17 12:46:40 : finished uncompressing. moving on to STAR.
+
+2024-05-17 12:46:40 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Output will be written to: 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+May 17 12:46:40 ...... FATAL ERROR, exiting
+2024-05-17 12:46:40 : Finished writing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results.bam
+
+2024-05-17 12:46:40 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+2024-05-17 12:52:42 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+pigz: abort: write error on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 12:52:42 : finished compressing.
+2024-05-17 12:52:42 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+2024-05-17 12:58:33 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq 
+2024-05-17 12:59:31 : finished compressing.
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+
+
+
+2024-05-17 12:59:31 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz
+gzip: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq already exists;	not overwritten
+2024-05-17 12:59:31 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq.gz
+2024-05-17 13:03:12 : finished uncompressing. moving on to STAR.
+
+2024-05-17 13:03:13 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Output will be written to: 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+
+May 17 13:03:13 ...... FATAL ERROR, exiting
+2024-05-17 13:03:13 : Finished writing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results.bam
+
+2024-05-17 13:03:13 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Output will be written to: 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+May 17 13:03:13 ...... FATAL ERROR, exiting
+2024-05-17 13:03:13 : Finished writing 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results.bam
+
+2024-05-17 13:03:13 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+2024-05-17 13:07:37 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+pigz: abort: write error on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 13:07:37 : finished compressing.
+2024-05-17 13:07:37 : performing fastQC on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 5% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 10% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 15% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 20% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 25% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 30% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 35% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 40% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 45% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 50% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 55% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 60% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 65% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 70% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 75% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 80% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 85% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 90% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 95% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Failed to process file 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: Ran out of data in the middle of a fastq entry.  Your file is probably truncated
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:187)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.next(FastQFile.java:129)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:77)
+	at java.lang.Thread.run(Thread.java:750)
+2024-05-17 13:09:36 : started compression of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+pigz: abort: write error on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 13:09:36 : finished compressing.
+2024-05-17 13:09:36 : performing fastQC on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq 
+text/plain
+Started analysis of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 5% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 10% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 15% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 20% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 25% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 30% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 35% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 40% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 45% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 50% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 55% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 60% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 65% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 70% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 75% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 80% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 85% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 90% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Approx 95% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Analysis complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+2024-05-17 13:17:12 : started compression of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq 
+2024-05-17 13:18:25 : finished compressing.
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+
+
+
+2024-05-17 13:18:25 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq.gz
+2024-05-17 13:21:59 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq.gz
+2024-05-17 13:25:55 : finished uncompressing. moving on to STAR.
+
+2024-05-17 13:25:56 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Output will be written to: 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+
+May 17 13:25:56 ...... FATAL ERROR, exiting
+2024-05-17 13:25:56 : Finished writing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results.bam
+
+2024-05-17 13:25:56 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Output will be written to: 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+
+May 17 13:25:56 ...... FATAL ERROR, exiting
+2024-05-17 13:25:56 : Finished writing 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results.bam
+
+2024-05-17 13:25:56 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Output will be written to: 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008.results
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+May 17 13:25:56 ...... FATAL ERROR, exiting
+2024-05-17 13:25:56 : Finished writing 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008.results.bam
+
+2024-05-17 13:25:56 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+2024-05-17 13:30:11 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+pigz: abort: write error on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 13:30:11 : finished compressing.
+2024-05-17 13:30:11 : performing fastQC on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 5% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 10% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 15% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 20% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 25% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 30% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 35% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 40% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 45% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 50% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 55% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 60% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 65% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 70% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 75% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 80% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 85% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 90% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 95% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Failed to process file 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: Ran out of data in the middle of a fastq entry.  Your file is probably truncated
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:187)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.next(FastQFile.java:129)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:77)
+	at java.lang.Thread.run(Thread.java:750)
+2024-05-17 13:32:01 : started compression of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+pigz: abort: write error on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 13:32:01 : finished compressing.
+2024-05-17 13:32:01 : performing fastQC on 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 5% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 10% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 15% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 20% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 25% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 30% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 35% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 40% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 45% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 50% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 55% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 60% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 65% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 70% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 75% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 80% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 85% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 90% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Approx 95% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+Analysis complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq
+2024-05-17 13:39:07 : started compression of 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R1_001.fastq 
+2024-05-17 13:40:10 : finished compressing.
+2024-05-17 13:40:10 : performing fastQC on 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq 
+text/plain
+Started analysis of 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 5% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 10% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 15% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 20% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 25% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 30% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 35% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 40% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 45% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 50% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 55% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 60% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 65% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 70% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 75% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 80% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 85% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 90% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Approx 95% complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+Analysis complete for 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq
+2024-05-17 13:47:05 : started compression of 23908X1_20240515_LH00227_0077_B22KK5WLT3_S58_L008_R2_001.fastq 
+2024-05-17 13:48:09 : finished compressing.
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+
+
+
+2024-05-17 13:48:09 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq.gz
+2024-05-17 13:52:08 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq.gz
+2024-05-17 13:56:11 : finished uncompressing. moving on to STAR.
+
+2024-05-17 13:56:11 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Output will be written to: 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+
+May 17 13:56:11 ...... FATAL ERROR, exiting
+2024-05-17 13:56:11 : Finished writing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results.bam
+
+2024-05-17 13:56:11 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Output will be written to: 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+
+May 17 13:56:11 ...... FATAL ERROR, exiting
+2024-05-17 13:56:11 : Finished writing 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results.bam
+
+2024-05-17 13:56:11 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Output will be written to: 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008.results
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+May 17 13:56:11 ...... FATAL ERROR, exiting
+2024-05-17 13:56:11 : Finished writing 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008.results.bam
+
+2024-05-17 13:56:12 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+2024-05-17 14:01:38 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+pigz: abort: write error on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 14:01:38 : finished compressing.
+2024-05-17 14:01:38 : performing fastQC on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 5% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 10% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 15% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 20% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 25% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 30% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 35% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 40% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 45% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 50% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 55% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 60% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 65% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 70% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 75% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 80% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 85% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 90% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 95% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Failed to process file 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: Ran out of data in the middle of a fastq entry.  Your file is probably truncated
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:187)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.next(FastQFile.java:129)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:77)
+	at java.lang.Thread.run(Thread.java:750)
+2024-05-17 14:03:21 : started compression of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+pigz: abort: write error on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 14:03:21 : finished compressing.
+2024-05-17 14:03:21 : performing fastQC on 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 5% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 10% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 15% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 20% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 25% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 30% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 35% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 40% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 45% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 50% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 55% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 60% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 65% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 70% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 75% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 80% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 85% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 90% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Approx 95% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+Analysis complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq
+2024-05-17 14:11:01 : started compression of 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R1_001.fastq 
+2024-05-17 14:12:08 : finished compressing.
+2024-05-17 14:12:08 : performing fastQC on 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq 
+text/plain
+Started analysis of 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 5% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 10% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 15% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 20% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 25% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 30% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 35% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 40% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 45% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 50% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 55% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 60% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 65% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 70% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 75% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 80% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 85% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 90% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Approx 95% complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+Analysis complete for 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq
+2024-05-17 14:20:02 : started compression of 23908X12_20240515_LH00227_0077_B22KK5WLT3_S69_L008_R2_001.fastq 
+2024-05-17 14:21:10 : finished compressing.
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+
+
+
+2024-05-17 14:21:10 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq.gz
+2024-05-17 14:25:41 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq.gz
+2024-05-17 14:30:22 : finished uncompressing. moving on to STAR.
+
+2024-05-17 14:30:22 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Output will be written to: 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+
+May 17 14:30:23 ...... FATAL ERROR, exiting
+2024-05-17 14:30:23 : Finished writing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results.bam
+
+2024-05-17 14:30:23 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Output will be written to: 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+
+May 17 14:30:23 ...... FATAL ERROR, exiting
+2024-05-17 14:30:23 : Finished writing 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results.bam
+
+2024-05-17 14:30:23 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Output will be written to: 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008.results
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+May 17 14:30:23 ...... FATAL ERROR, exiting
+2024-05-17 14:30:23 : Finished writing 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008.results.bam
+
+2024-05-17 14:30:23 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+2024-05-17 14:35:35 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+pigz: abort: write error on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 14:35:35 : finished compressing.
+2024-05-17 14:35:35 : performing fastQC on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 5% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 10% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 15% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 20% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 25% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 30% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 35% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 40% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 45% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 50% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 55% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 60% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 65% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 70% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 75% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 80% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 85% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 90% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 95% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Failed to process file 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: Ran out of data in the middle of a fastq entry.  Your file is probably truncated
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:187)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.next(FastQFile.java:129)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:77)
+	at java.lang.Thread.run(Thread.java:750)
+2024-05-17 14:37:07 : started compression of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+pigz: abort: write error on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 14:37:07 : finished compressing.
+2024-05-17 14:37:07 : performing fastQC on 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 5% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 10% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 15% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 20% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 25% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 30% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 35% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 40% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 45% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 50% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 55% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 60% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 65% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 70% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 75% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 80% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 85% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 90% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Approx 95% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+Analysis complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq
+2024-05-17 14:45:41 : started compression of 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R1_001.fastq 
+2024-05-17 14:46:49 : finished compressing.
+2024-05-17 14:46:49 : performing fastQC on 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq 
+text/plain
+Started analysis of 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 5% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 10% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 15% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 20% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 25% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 30% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 35% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 40% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 45% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 50% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 55% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 60% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 65% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 70% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 75% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 80% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 85% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 90% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Approx 95% complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+Analysis complete for 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq
+2024-05-17 14:55:13 : started compression of 23908X13_20240515_LH00227_0077_B22KK5WLT3_S70_L008_R2_001.fastq 
+2024-05-17 14:56:29 : finished compressing.
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+
+
+
+2024-05-17 14:56:29 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq.gz
+2024-05-17 14:59:39 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq.gz
+2024-05-17 15:02:51 : finished uncompressing. moving on to STAR.
+
+2024-05-17 15:02:51 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Output will be written to: 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+
+May 17 15:02:52 ...... FATAL ERROR, exiting
+2024-05-17 15:02:52 : Finished writing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results.bam
+
+2024-05-17 15:02:52 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Output will be written to: 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+
+May 17 15:02:52 ...... FATAL ERROR, exiting
+2024-05-17 15:02:52 : Finished writing 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results.bam
+
+2024-05-17 15:02:52 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Output will be written to: 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008.results
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+May 17 15:02:52 ...... FATAL ERROR, exiting
+2024-05-17 15:02:52 : Finished writing 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008.results.bam
+
+2024-05-17 15:02:52 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+2024-05-17 15:08:19 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+pigz: abort: write error on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 15:08:19 : finished compressing.
+2024-05-17 15:08:19 : performing fastQC on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 5% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 10% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 15% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 20% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 25% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 30% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 35% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 40% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 45% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 50% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 55% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 60% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 65% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 70% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 75% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 80% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 85% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 90% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 95% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Failed to process file 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: Ran out of data in the middle of a fastq entry.  Your file is probably truncated
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:187)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.next(FastQFile.java:129)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:77)
+	at java.lang.Thread.run(Thread.java:750)
+2024-05-17 15:10:34 : started compression of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+pigz: abort: write error on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 15:10:34 : finished compressing.
+2024-05-17 15:10:34 : performing fastQC on 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 5% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 10% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 15% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 20% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 25% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 30% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 35% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 40% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 45% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 50% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 55% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 60% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 65% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 70% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 75% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 80% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 85% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 90% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Approx 95% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+Analysis complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq
+2024-05-17 15:16:41 : started compression of 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R1_001.fastq 
+2024-05-17 15:17:25 : finished compressing.
+2024-05-17 15:17:25 : performing fastQC on 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq 
+text/plain
+Started analysis of 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 5% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 10% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 15% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 20% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 25% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 30% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 35% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 40% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 45% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 50% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 55% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 60% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 65% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 70% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 75% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 80% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 85% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 90% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Approx 95% complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+Analysis complete for 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq
+2024-05-17 15:23:25 : started compression of 23908X14_20240515_LH00227_0077_B22KK5WLT3_S71_L008_R2_001.fastq 
+2024-05-17 15:24:09 : finished compressing.
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+
+
+
+2024-05-17 15:24:09 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq.gz
+2024-05-17 15:27:56 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq.gz
+2024-05-17 15:31:52 : finished uncompressing. moving on to STAR.
+
+2024-05-17 15:31:53 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Output will be written to: 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+
+May 17 15:31:53 ...... FATAL ERROR, exiting
+2024-05-17 15:31:53 : Finished writing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results.bam
+
+2024-05-17 15:31:53 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Output will be written to: 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+
+May 17 15:31:53 ...... FATAL ERROR, exiting
+2024-05-17 15:31:53 : Finished writing 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results.bam
+
+2024-05-17 15:31:53 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Output will be written to: 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008.results
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+May 17 15:31:53 ...... FATAL ERROR, exiting
+2024-05-17 15:31:53 : Finished writing 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008.results.bam
+
+2024-05-17 15:31:53 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+2024-05-17 15:36:12 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+pigz: abort: write error on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 15:36:12 : finished compressing.
+2024-05-17 15:36:12 : performing fastQC on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 5% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 10% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 15% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 20% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 25% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 30% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 35% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 40% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 45% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 50% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 55% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 60% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 65% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 70% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 75% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 80% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 85% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 90% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 95% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Failed to process file 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: Ran out of data in the middle of a fastq entry.  Your file is probably truncated
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:187)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.next(FastQFile.java:129)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:77)
+	at java.lang.Thread.run(Thread.java:750)
+2024-05-17 15:38:17 : started compression of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+pigz: abort: write error on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 15:38:17 : finished compressing.
+2024-05-17 15:38:17 : performing fastQC on 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 5% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 10% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 15% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 20% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 25% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 30% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 35% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 40% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 45% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 50% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 55% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 60% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 65% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 70% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 75% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 80% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 85% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 90% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Approx 95% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+Analysis complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq
+2024-05-17 15:45:17 : started compression of 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R1_001.fastq 
+2024-05-17 15:45:59 : finished compressing.
+2024-05-17 15:45:59 : performing fastQC on 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq 
+text/plain
+Started analysis of 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 5% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 10% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 15% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 20% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 25% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 30% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 35% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 40% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 45% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 50% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 55% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 60% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 65% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 70% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 75% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 80% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 85% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 90% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Approx 95% complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+Analysis complete for 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq
+2024-05-17 15:52:48 : started compression of 23908X15_20240515_LH00227_0077_B22KK5WLT3_S72_L008_R2_001.fastq 
+2024-05-17 15:53:31 : finished compressing.
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+
+
+
+2024-05-17 15:53:31 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq.gz
+2024-05-17 15:57:04 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq.gz
+2024-05-17 16:00:47 : finished uncompressing. moving on to STAR.
+
+2024-05-17 16:00:47 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Output will be written to: 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+
+May 17 16:00:47 ...... FATAL ERROR, exiting
+2024-05-17 16:00:47 : Finished writing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results.bam
+
+2024-05-17 16:00:47 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Output will be written to: 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+
+May 17 16:00:47 ...... FATAL ERROR, exiting
+2024-05-17 16:00:47 : Finished writing 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results.bam
+
+2024-05-17 16:00:48 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Output will be written to: 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008.results
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+May 17 16:00:48 ...... FATAL ERROR, exiting
+2024-05-17 16:00:48 : Finished writing 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008.results.bam
+
+2024-05-17 16:00:48 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+2024-05-17 16:05:52 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+pigz: abort: write error on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 16:05:52 : finished compressing.
+2024-05-17 16:05:52 : performing fastQC on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 5% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 10% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 15% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 20% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 25% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 30% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 35% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 40% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 45% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 50% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 55% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 60% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 65% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 70% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 75% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 80% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 85% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 90% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 95% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Failed to process file 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: Ran out of data in the middle of a fastq entry.  Your file is probably truncated
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:187)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.next(FastQFile.java:129)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:77)
+	at java.lang.Thread.run(Thread.java:750)
+2024-05-17 16:07:51 : started compression of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+pigz: abort: write error on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 16:07:51 : finished compressing.
+2024-05-17 16:07:51 : performing fastQC on 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 5% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 10% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 15% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 20% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 25% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 30% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 35% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 40% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 45% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 50% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 55% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 60% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 65% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 70% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 75% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 80% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 85% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 90% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Approx 95% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+Analysis complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq
+2024-05-17 16:14:35 : started compression of 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R1_001.fastq 
+2024-05-17 16:15:27 : finished compressing.
+2024-05-17 16:15:27 : performing fastQC on 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq 
+text/plain
+Started analysis of 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 5% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 10% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 15% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 20% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 25% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 30% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 35% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 40% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 45% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 50% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 55% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 60% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 65% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 70% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 75% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 80% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 85% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 90% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Approx 95% complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+Analysis complete for 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq
+2024-05-17 16:22:17 : started compression of 23908X16_20240515_LH00227_0077_B22KK5WLT3_S73_L008_R2_001.fastq 
+2024-05-17 16:23:10 : finished compressing.
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+mv: cannot stat 'file': No such file or directory
+
+
+
+2024-05-17 16:23:10 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq.gz
+2024-05-17 16:28:11 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq.gz
+2024-05-17 16:33:29 : finished uncompressing. moving on to STAR.
+
+2024-05-17 16:33:29 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+Output will be written to: 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq
+
+May 17 16:33:29 ...... FATAL ERROR, exiting
+2024-05-17 16:33:29 : Finished writing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008.results.bam
+
+2024-05-17 16:33:29 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+Output will be written to: 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results
+
+EXITING because of fatal input ERROR: could not open readFilesIn=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R2_001.fastq
+
+May 17 16:33:29 ...... FATAL ERROR, exiting
+2024-05-17 16:33:29 : Finished writing 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008.results.bam
+
+2024-05-17 16:33:29 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Output will be written to: 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008.results
+
+EXITING because of fatal PARAMETERS error: limitBAMsortRAM=0 (default) cannot be used with --genomeLoad=LoadAndKeep, or any other shared memory options
+SOLUTION: please use default --genomeLoad NoSharedMemory, 
+        OR specify --limitBAMsortRAM the amount of RAM (bytes) that can be allocated for BAM sorting in addition to shared memory allocated for the genome.
+        --limitBAMsortRAM typically has to be > 10000000000 (i.e 10GB).
+
+May 17 16:33:29 ...... FATAL ERROR, exiting
+2024-05-17 16:33:29 : Finished writing 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008.results.bam
+
+2024-05-17 16:33:29 : performing fastQC on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 5% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 10% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 15% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 20% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 25% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 30% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 35% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 40% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 45% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 50% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 55% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 60% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 65% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 70% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 75% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 80% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 85% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 90% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Approx 95% complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+Analysis complete for 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq
+2024-05-17 16:38:11 : started compression of 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+pigz: abort: write error on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 16:38:11 : finished compressing.
+2024-05-17 16:38:11 : performing fastQC on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 5% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 10% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 15% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 20% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 25% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 30% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 35% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 40% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 45% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 50% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 55% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 60% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 65% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 70% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 75% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 80% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 85% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 90% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Approx 95% complete for 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+Failed to process file 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: Ran out of data in the middle of a fastq entry.  Your file is probably truncated
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:187)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.next(FastQFile.java:129)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:77)
+	at java.lang.Thread.run(Thread.java:750)
+2024-05-17 16:39:39 : started compression of 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+pigz: abort: write error on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 16:39:39 : finished compressing.
+2024-05-17 16:39:39 : performing fastQC on 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq 
+text/plain
+Started analysis of 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 5% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 10% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 15% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 20% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 25% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 30% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 35% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 40% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 45% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 50% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 55% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 60% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 65% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 70% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 75% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 80% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 85% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 90% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Approx 95% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+Analysis complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq
+2024-05-17 16:48:45 : started compression of 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq 
+2024-05-17 16:50:11 : finished compressing.
+2024-05-17 16:50:11 : performing fastQC on 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq 
+text/plain
+Started analysis of 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 5% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 10% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 15% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 20% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 25% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 30% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 35% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 40% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 45% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 50% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+Approx 55% complete for 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq
+slurmstepd: error: *** JOB 6543201 ON lp116 CANCELLED AT 2024-05-17T16:55:19 ***

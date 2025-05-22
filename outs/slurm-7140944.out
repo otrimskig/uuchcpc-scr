@@ -1,0 +1,28 @@
+2024-11-04 15:30:45 : started job 
+Lmod has detected the following error: The following module(s) are unknown:
+"bfctools"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "bfctools"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+
+
+2024-11-04 15:30:50 : Processing files step 1
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp130//job7140944/slurm_script: line 46: spec_counts//uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R_merged/bamstest/23908X07_merged.bam: No such file or directory
+2024-11-04 15:30:50 : Processing files step 2
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp130//job7140944/slurm_script: line 49: bcftools: command not found
+[E::fai_build3_core] Failed to open the file reference.fa
+
+
+
+
+
+2024-11-04 15:30:50 : ended job 
+Runtime: 0:0:5

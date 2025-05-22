@@ -1,0 +1,3 @@
+2024-05-20 13:12:53 : started job 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6548242/slurm_script: line 77: unexpected EOF while looking for matching `"'
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6548242/slurm_script: line 78: syntax error: unexpected end of file

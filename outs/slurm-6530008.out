@@ -1,0 +1,92 @@
+start of job at 2024-05-08 10:32:00 
+started compression of 23908X24_20240412_LH00227_0067_A22KHYJLT3_S41_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X24_20240412_LH00227_0067_A22KHYJLT3_S41_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X25_20240412_LH00227_0067_A22KHYJLT3_S42_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X25_20240412_LH00227_0067_A22KHYJLT3_S42_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X26_20240412_LH00227_0067_A22KHYJLT3_S43_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X26_20240412_LH00227_0067_A22KHYJLT3_S43_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X27_20240412_LH00227_0067_A22KHYJLT3_S44_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X27_20240412_LH00227_0067_A22KHYJLT3_S44_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X28_20240412_LH00227_0067_A22KHYJLT3_S45_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X28_20240412_LH00227_0067_A22KHYJLT3_S45_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X29_20240412_LH00227_0067_A22KHYJLT3_S46_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X29_20240412_LH00227_0067_A22KHYJLT3_S46_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X30_20240412_LH00227_0067_A22KHYJLT3_S47_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X30_20240412_LH00227_0067_A22KHYJLT3_S47_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X31_20240412_LH00227_0067_A22KHYJLT3_S48_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X31_20240412_LH00227_0067_A22KHYJLT3_S48_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X3_20240412_LH00227_0067_A22KHYJLT3_S20_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X3_20240412_LH00227_0067_A22KHYJLT3_S20_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X4_20240412_LH00227_0067_A22KHYJLT3_S21_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X4_20240412_LH00227_0067_A22KHYJLT3_S21_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X5_20240412_LH00227_0067_A22KHYJLT3_S22_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X5_20240412_LH00227_0067_A22KHYJLT3_S22_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X6_20240412_LH00227_0067_A22KHYJLT3_S23_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X6_20240412_LH00227_0067_A22KHYJLT3_S23_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X7_20240412_LH00227_0067_A22KHYJLT3_S24_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X7_20240412_LH00227_0067_A22KHYJLT3_S24_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X8_20240412_LH00227_0067_A22KHYJLT3_S25_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X8_20240412_LH00227_0067_A22KHYJLT3_S25_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X9_20240412_LH00227_0067_A22KHYJLT3_S26_L003_R1_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+started compression of 23908X9_20240412_LH00227_0067_A22KHYJLT3_S26_L003_R2_001.fastq at 2024-05-08 10:32:01 
+/uufs/lonepeak.peaks/sys/var/slurm/slurmd.spool/lp114//job6530008/slurm_script: line 27: pigzip: command not found
+finished compressing.
+end of job at 2024-05-08 10:32:01 

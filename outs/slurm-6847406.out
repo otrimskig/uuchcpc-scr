@@ -1,0 +1,12 @@
+2024-08-13 16:27:08 : started job 
+
+
+
+2024-08-13 16:27:10 : Processing files:
+Output will be written to: SRR8223281.results
+
+	STAR --runThreadN 40 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/kircher19/fastq_files/SRR8223281.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR8223281.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 13 16:27:10 ..... started STAR run
+Aug 13 16:27:10 ..... loading genome
+slurmstepd: error: *** JOB 6847406 ON lp113 CANCELLED AT 2024-08-13T16:29:15 ***

@@ -1,0 +1,57 @@
+start of job at 2024-05-07 16:49:52 
+started compression of 23908X1_20240412_LH00227_0067_A22KHYJLT3_S18_L003_R2_001.fastq at 2024-05-07 16:49:52 
+finished compressing.
+started compression of 23908X12_20240412_LH00227_0067_A22KHYJLT3_S29_L003_R1_001.fastq at 2024-05-07 17:08:34 
+finished compressing.
+started compression of 23908X12_20240412_LH00227_0067_A22KHYJLT3_S29_L003_R2_001.fastq at 2024-05-07 17:28:54 
+finished compressing.
+started compression of 23908X13_20240412_LH00227_0067_A22KHYJLT3_S30_L003_R1_001.fastq at 2024-05-07 17:53:19 
+finished compressing.
+started compression of 23908X13_20240412_LH00227_0067_A22KHYJLT3_S30_L003_R2_001.fastq at 2024-05-07 18:17:19 
+finished compressing.
+started compression of 23908X14_20240412_LH00227_0067_A22KHYJLT3_S31_L003_R1_001.fastq at 2024-05-07 18:43:13 
+finished compressing.
+started compression of 23908X14_20240412_LH00227_0067_A22KHYJLT3_S31_L003_R2_001.fastq at 2024-05-07 18:56:49 
+finished compressing.
+started compression of 23908X15_20240412_LH00227_0067_A22KHYJLT3_S32_L003_R1_001.fastq at 2024-05-07 19:11:55 
+finished compressing.
+started compression of 23908X15_20240412_LH00227_0067_A22KHYJLT3_S32_L003_R2_001.fastq at 2024-05-07 19:23:56 
+finished compressing.
+started compression of 23908X16_20240412_LH00227_0067_A22KHYJLT3_S33_L003_R1_001.fastq at 2024-05-07 19:37:01 
+finished compressing.
+started compression of 23908X16_20240412_LH00227_0067_A22KHYJLT3_S33_L003_R2_001.fastq at 2024-05-07 19:53:03 
+finished compressing.
+started compression of 23908X17_20240412_LH00227_0067_A22KHYJLT3_S34_L003_R1_001.fastq at 2024-05-07 20:11:09 
+finished compressing.
+started compression of 23908X17_20240412_LH00227_0067_A22KHYJLT3_S34_L003_R2_001.fastq at 2024-05-07 20:38:52 
+finished compressing.
+started compression of 23908X18_20240412_LH00227_0067_A22KHYJLT3_S35_L003_R1_001.fastq at 2024-05-07 21:05:28 
+finished compressing.
+started compression of 23908X18_20240412_LH00227_0067_A22KHYJLT3_S35_L003_R2_001.fastq at 2024-05-07 21:31:32 
+finished compressing.
+started compression of 23908X19_20240412_LH00227_0067_A22KHYJLT3_S36_L003_R1_001.fastq at 2024-05-07 21:58:29 
+finished compressing.
+started compression of 23908X19_20240412_LH00227_0067_A22KHYJLT3_S36_L003_R2_001.fastq at 2024-05-07 22:27:28 
+finished compressing.
+started compression of 23908X20_20240412_LH00227_0067_A22KHYJLT3_S37_L003_R1_001.fastq at 2024-05-07 22:57:13 
+finished compressing.
+started compression of 23908X20_20240412_LH00227_0067_A22KHYJLT3_S37_L003_R2_001.fastq at 2024-05-07 23:24:36 
+finished compressing.
+started compression of 23908X21_20240412_LH00227_0067_A22KHYJLT3_S38_L003_R1_001.fastq at 2024-05-07 23:53:48 
+finished compressing.
+started compression of 23908X21_20240412_LH00227_0067_A22KHYJLT3_S38_L003_R2_001.fastq at 2024-05-08 00:09:59 
+finished compressing.
+started compression of 23908X2_20240412_LH00227_0067_A22KHYJLT3_S19_L003_R1_001.fastq at 2024-05-08 00:26:41 
+finished compressing.
+started compression of 23908X2_20240412_LH00227_0067_A22KHYJLT3_S19_L003_R2_001.fastq at 2024-05-08 00:45:03 
+finished compressing.
+started compression of 23908X22_20240412_LH00227_0067_A22KHYJLT3_S39_L003_R1_001.fastq at 2024-05-08 01:04:48 
+finished compressing.
+started compression of 23908X22_20240412_LH00227_0067_A22KHYJLT3_S39_L003_R2_001.fastq at 2024-05-08 01:30:14 
+finished compressing.
+started compression of 23908X23_20240412_LH00227_0067_A22KHYJLT3_S40_L003_R1_001.fastq at 2024-05-08 01:54:28 
+finished compressing.
+started compression of 23908X23_20240412_LH00227_0067_A22KHYJLT3_S40_L003_R2_001.fastq at 2024-05-08 02:21:34 
+finished compressing.
+started compression of 23908X24_20240412_LH00227_0067_A22KHYJLT3_S41_L003_R1_001.fastq at 2024-05-08 02:49:20 
+slurmstepd: error: *** JOB 6529388 ON lp113 CANCELLED AT 2024-05-08T02:50:16 DUE TO TIME LIMIT ***

@@ -1,0 +1,16 @@
+2024-05-17 17:44:28 : started job 
+2024-05-17 17:44:30 : re-compressing 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq 
+pigz: abort: write error on 23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 17:44:30 : re-compressing 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq 
+pigz: abort: write error on 23908X11_20240515_LH00227_0077_B22KK5WLT3_S68_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 17:44:30 : re-compressing 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq 
+pigz: abort: write error on 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R1_001.fastq.gz (Inappropriate ioctl for device)
+2024-05-17 17:44:30 : re-compressing 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq 
+pigz: abort: write error on 23908X17_20240515_LH00227_0077_B22KK5WLT3_S74_L008_R2_001.fastq.gz (Inappropriate ioctl for device)
+
+
+
+2024-05-17 17:44:30 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq.gz
+gzip: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R1_001.fastq already exists;	not overwritten
+2024-05-17 17:44:30 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/23908R2/Fastq/23908X10_20240515_LH00227_0077_B22KK5WLT3_S67_L008_R2_001.fastq.gz
+slurmstepd: error: *** JOB 6543641 ON lp115 CANCELLED AT 2024-05-17T17:45:25 ***

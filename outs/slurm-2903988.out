@@ -1,0 +1,130 @@
+2025-01-22 09:35:29 : started job 
+
+
+
+2025-01-22 09:35:31 : Subsetting bam file 25622X01_20241213_LH00227_0128_A22VVG7LT3_S98_L003.resultsAligned.sortedByCoord.out
+
+
+
+2025-01-22 09:35:32 : Indexing subsetted bam file 25622X01_20241213_LH00227_0128_A22VVG7LT3_S98_L003.resultsAligned.sortedByCoord.out_cdkn2a.bam
+
+
+
+2025-01-22 09:35:32 : Processing and filtering variants from subsetted bam file 25622X01_20241213_LH00227_0128_A22VVG7LT3_S98_L003.resultsAligned.sortedByCoord.out_cdkn2a
+[mpileup] 1 samples in 1 input files
+2025-01-22 09:35:34 : Finished processing cdkn2a
+
+2025-01-22 09:35:34 : Subsetting bam file 25622X02_20241213_LH00227_0128_A22VVG7LT3_S99_L003.resultsAligned.sortedByCoord.out
+
+
+
+2025-01-22 09:35:34 : Indexing subsetted bam file 25622X02_20241213_LH00227_0128_A22VVG7LT3_S99_L003.resultsAligned.sortedByCoord.out_cdkn2a.bam
+
+
+
+2025-01-22 09:35:34 : Processing and filtering variants from subsetted bam file 25622X02_20241213_LH00227_0128_A22VVG7LT3_S99_L003.resultsAligned.sortedByCoord.out_cdkn2a
+[mpileup] 1 samples in 1 input files
+2025-01-22 09:35:36 : Finished processing cdkn2a
+
+2025-01-22 09:35:36 : Subsetting bam file 25622X03_20241213_LH00227_0128_A22VVG7LT3_S100_L003.resultsAligned.sortedByCoord.out
+
+
+
+2025-01-22 09:35:36 : Indexing subsetted bam file 25622X03_20241213_LH00227_0128_A22VVG7LT3_S100_L003.resultsAligned.sortedByCoord.out_cdkn2a.bam
+
+
+
+2025-01-22 09:35:36 : Processing and filtering variants from subsetted bam file 25622X03_20241213_LH00227_0128_A22VVG7LT3_S100_L003.resultsAligned.sortedByCoord.out_cdkn2a
+[mpileup] 1 samples in 1 input files
+2025-01-22 09:35:36 : Finished processing cdkn2a
+
+2025-01-22 09:35:36 : Subsetting bam file 25622X04_20241213_LH00227_0128_A22VVG7LT3_S101_L003.resultsAligned.sortedByCoord.out
+
+
+
+2025-01-22 09:35:36 : Indexing subsetted bam file 25622X04_20241213_LH00227_0128_A22VVG7LT3_S101_L003.resultsAligned.sortedByCoord.out_cdkn2a.bam
+
+
+
+2025-01-22 09:35:36 : Processing and filtering variants from subsetted bam file 25622X04_20241213_LH00227_0128_A22VVG7LT3_S101_L003.resultsAligned.sortedByCoord.out_cdkn2a
+[mpileup] 1 samples in 1 input files
+2025-01-22 09:35:38 : Finished processing cdkn2a
+
+2025-01-22 09:35:38 : Subsetting bam file 25622X05_20241213_LH00227_0128_A22VVG7LT3_S102_L003.resultsAligned.sortedByCoord.out
+
+
+
+2025-01-22 09:35:38 : Indexing subsetted bam file 25622X05_20241213_LH00227_0128_A22VVG7LT3_S102_L003.resultsAligned.sortedByCoord.out_cdkn2a.bam
+
+
+
+2025-01-22 09:35:38 : Processing and filtering variants from subsetted bam file 25622X05_20241213_LH00227_0128_A22VVG7LT3_S102_L003.resultsAligned.sortedByCoord.out_cdkn2a
+[mpileup] 1 samples in 1 input files
+2025-01-22 09:35:39 : Finished processing cdkn2a
+
+2025-01-22 09:35:39 : Subsetting bam file 25622X06_20241213_LH00227_0128_A22VVG7LT3_S103_L003.resultsAligned.sortedByCoord.out
+
+
+
+2025-01-22 09:35:39 : Indexing subsetted bam file 25622X06_20241213_LH00227_0128_A22VVG7LT3_S103_L003.resultsAligned.sortedByCoord.out_cdkn2a.bam
+
+
+
+2025-01-22 09:35:39 : Processing and filtering variants from subsetted bam file 25622X06_20241213_LH00227_0128_A22VVG7LT3_S103_L003.resultsAligned.sortedByCoord.out_cdkn2a
+[mpileup] 1 samples in 1 input files
+2025-01-22 09:35:41 : Finished processing cdkn2a
+
+2025-01-22 09:35:41 : Subsetting bam file 25622X07_20241213_LH00227_0128_A22VVG7LT3_S104_L003.resultsAligned.sortedByCoord.out
+
+
+
+2025-01-22 09:35:41 : Indexing subsetted bam file 25622X07_20241213_LH00227_0128_A22VVG7LT3_S104_L003.resultsAligned.sortedByCoord.out_cdkn2a.bam
+
+
+
+2025-01-22 09:35:41 : Processing and filtering variants from subsetted bam file 25622X07_20241213_LH00227_0128_A22VVG7LT3_S104_L003.resultsAligned.sortedByCoord.out_cdkn2a
+[mpileup] 1 samples in 1 input files
+2025-01-22 09:35:42 : Finished processing cdkn2a
+
+2025-01-22 09:35:42 : Subsetting bam file 25622X08_20241213_LH00227_0128_A22VVG7LT3_S105_L003.resultsAligned.sortedByCoord.out
+
+
+
+2025-01-22 09:35:42 : Indexing subsetted bam file 25622X08_20241213_LH00227_0128_A22VVG7LT3_S105_L003.resultsAligned.sortedByCoord.out_cdkn2a.bam
+
+
+
+2025-01-22 09:35:42 : Processing and filtering variants from subsetted bam file 25622X08_20241213_LH00227_0128_A22VVG7LT3_S105_L003.resultsAligned.sortedByCoord.out_cdkn2a
+[mpileup] 1 samples in 1 input files
+2025-01-22 09:35:43 : Finished processing cdkn2a
+
+2025-01-22 09:35:43 : Subsetting bam file 25622X09_20241213_LH00227_0128_A22VVG7LT3_S106_L003.resultsAligned.sortedByCoord.out
+
+
+
+2025-01-22 09:35:44 : Indexing subsetted bam file 25622X09_20241213_LH00227_0128_A22VVG7LT3_S106_L003.resultsAligned.sortedByCoord.out_cdkn2a.bam
+
+
+
+2025-01-22 09:35:44 : Processing and filtering variants from subsetted bam file 25622X09_20241213_LH00227_0128_A22VVG7LT3_S106_L003.resultsAligned.sortedByCoord.out_cdkn2a
+[mpileup] 1 samples in 1 input files
+2025-01-22 09:35:45 : Finished processing cdkn2a
+
+2025-01-22 09:35:45 : Subsetting bam file 25622X10_20241213_LH00227_0128_A22VVG7LT3_S107_L003.resultsAligned.sortedByCoord.out
+
+
+
+2025-01-22 09:35:45 : Indexing subsetted bam file 25622X10_20241213_LH00227_0128_A22VVG7LT3_S107_L003.resultsAligned.sortedByCoord.out_cdkn2a.bam
+
+
+
+2025-01-22 09:35:45 : Processing and filtering variants from subsetted bam file 25622X10_20241213_LH00227_0128_A22VVG7LT3_S107_L003.resultsAligned.sortedByCoord.out_cdkn2a
+[mpileup] 1 samples in 1 input files
+2025-01-22 09:35:46 : Finished processing cdkn2a
+
+All BAM files have been processed.
+
+
+
+2025-01-22 09:35:46 : ended job 
+Runtime: 0:0:17

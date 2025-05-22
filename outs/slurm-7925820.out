@@ -1,0 +1,25 @@
+start of job at 2025-05-21 11:53:09 
+mkdir: cannot create directory ‘/uufs/chpc’: Read-only file system
+Fetching file list from https://ftp.ncbi.nlm.nih.gov/geo/series/GSE185nnn/GSE185386/suppl/ ...
+
+Downloading GSE185386_RAW.tar ...
+#=#=#                                                                         Warning: Failed to create the file /uufs/chpc/GSE185386/GSE185386_RAW.tar: No 
+Warning: such file or directory
+
+curl: (23) Failed writing body (0 != 7643)
+
+Downloading filelist.txt ...
+#=#=#                                                                         Warning: Failed to create the file /uufs/chpc/GSE185386/filelist.txt: No such 
+Warning: file or directory
+
+curl: (23) Failed writing body (0 != 7623)
+
+Downloading https://www.hhs.gov/vulnerability-disclosure-policy/index.html ...
+#=#=#                                                                         Warning: Failed to create the file 
+Warning: /uufs/chpc/GSE185386/https://www.hhs.gov/vulnerability-disclosure-poli
+Warning: cy/index.html: No such file or directory
+
+curl: (23) Failed writing body (0 != 200)
+
+Download complete. Files saved to: /uufs/chpc/GSE185386
+end of job at 2025-05-21 11:53:10 

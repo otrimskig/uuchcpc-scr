@@ -1,0 +1,8 @@
+2024-12-16 16:44:57 : started job 
+array task ID: 18
+
+2024-12-16 16:44:57 : unzipping 25622X09_20241213_LH00227_0128_A22VVG7LT3_S106_L003_R2_001.fastq.gz
+unpigz: skipping: gz_file does not exist
+
+2024-12-16 16:44:58 : ended job 
+Runtime: 0:0:1

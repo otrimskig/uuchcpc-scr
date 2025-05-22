@@ -1,0 +1,11 @@
+start of job at 2024-05-07 14:56:44 
+started compression of 23908X10_20240412_LH00227_0067_A22KHYJLT3_S27_L003_R2_001.fastq at 2024-05-07 14:56:44 
+finished compressing.
+started compression of 23908X11_20240412_LH00227_0067_A22KHYJLT3_S28_L003_R1_001.fastq at 2024-05-07 15:14:19 
+finished compressing.
+started compression of 23908X11_20240412_LH00227_0067_A22KHYJLT3_S28_L003_R2_001.fastq at 2024-05-07 15:35:57 
+finished compressing.
+started compression of 23908X1_20240412_LH00227_0067_A22KHYJLT3_S18_L003_R1_001.fastq at 2024-05-07 15:58:23 
+finished compressing.
+started compression of 23908X1_20240412_LH00227_0067_A22KHYJLT3_S18_L003_R2_001.fastq at 2024-05-07 16:17:18 
+slurmstepd: error: *** JOB 743758 ON notch080 CANCELLED AT 2024-05-07T16:31:23 DUE TO PREEMPTION ***

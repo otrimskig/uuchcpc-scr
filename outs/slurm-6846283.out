@@ -1,0 +1,393 @@
+2024-08-12 19:28:12 : started job 
+2024-08-12 19:28:15 : re-compressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/*.fastq 
+pigz: skipping: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/*.fastq does not exist
+
+
+
+2024-08-12 19:28:15 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq.gz
+2024-08-12 19:31:01 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq.gz
+2024-08-12 19:33:55 : finished uncompressing. moving on to STAR.
+
+2024-08-12 19:33:55 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Output will be written to: 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007.results
+	STAR --runThreadN 40 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 12 19:33:55 ..... started STAR run
+Aug 12 19:33:55 ..... loading genome
+Aug 12 19:37:43 ..... started mapping
+Aug 12 19:46:29 ..... finished mapping
+Aug 12 19:46:32 ..... started sorting BAM
+Aug 12 19:48:38 ..... finished successfully
+2024-08-12 19:48:40 : Finished writing 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007.results.bam
+
+2024-08-12 19:48:40 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq 
+text/plain
+Started analysis of 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 5% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 10% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 15% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 20% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 25% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 30% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 35% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 40% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 45% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 50% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 55% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 60% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 65% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 70% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 75% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 80% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 85% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 90% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Approx 95% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+Analysis complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq
+2024-08-12 19:53:05 : started compression of /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R1_001.fastq 
+2024-08-12 19:53:58 : finished compressing.
+2024-08-12 19:53:58 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq 
+text/plain
+Started analysis of 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 5% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 10% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 15% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 20% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 25% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 30% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 35% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 40% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 45% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 50% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 55% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 60% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 65% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 70% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 75% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 80% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 85% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 90% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Approx 95% complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+Analysis complete for 24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq
+2024-08-12 19:58:15 : started compression of /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X1_20240809_LH00227_0096_A22NGGCLT3_S298_L007_R2_001.fastq 
+2024-08-12 19:59:06 : finished compressing.
+2024-08-12 19:59:06 : indexing bam file.
+2024-08-12 20:00:02 : cleaning up.
+2024-08-12 20:00:02 : moving star progress logs.
+2024-08-12 20:00:02 : moving fastqc files.
+2024-08-12 20:00:02 : moving bam and bai files.
+
+
+
+2024-08-12 20:00:03 : finished with pair of fastqs.
+2024-08-12 20:00:03 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq.gz
+2024-08-12 20:03:03 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq.gz
+2024-08-12 20:06:03 : finished uncompressing. moving on to STAR.
+
+2024-08-12 20:06:03 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Output will be written to: 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007.results
+	STAR --runThreadN 40 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 12 20:06:03 ..... started STAR run
+Aug 12 20:06:03 ..... loading genome
+Aug 12 20:09:53 ..... started mapping
+Aug 12 20:24:06 ..... finished mapping
+Aug 12 20:24:07 ..... started sorting BAM
+Aug 12 20:25:24 ..... finished successfully
+2024-08-12 20:25:26 : Finished writing 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007.results.bam
+
+2024-08-12 20:25:26 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq 
+text/plain
+Started analysis of 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 5% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 10% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 15% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 20% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 25% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 30% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 35% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 40% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 45% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 50% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 55% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 60% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 65% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 70% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 75% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 80% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 85% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 90% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Approx 95% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+Analysis complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq
+2024-08-12 20:29:49 : started compression of /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R1_001.fastq 
+2024-08-12 20:30:37 : finished compressing.
+2024-08-12 20:30:37 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq 
+text/plain
+Started analysis of 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 5% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 10% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 15% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 20% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 25% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 30% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 35% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 40% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 45% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 50% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 55% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 60% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 65% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 70% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 75% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 80% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 85% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 90% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Approx 95% complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+Analysis complete for 24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq
+2024-08-12 20:35:01 : started compression of /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X2_20240809_LH00227_0096_A22NGGCLT3_S299_L007_R2_001.fastq 
+2024-08-12 20:35:48 : finished compressing.
+2024-08-12 20:35:48 : indexing bam file.
+2024-08-12 20:36:22 : cleaning up.
+2024-08-12 20:36:22 : moving star progress logs.
+2024-08-12 20:36:22 : moving fastqc files.
+2024-08-12 20:36:22 : moving bam and bai files.
+
+
+
+2024-08-12 20:36:22 : finished with pair of fastqs.
+2024-08-12 20:36:22 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq.gz
+2024-08-12 20:38:41 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq.gz
+2024-08-12 20:40:59 : finished uncompressing. moving on to STAR.
+
+2024-08-12 20:40:59 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Output will be written to: 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007.results
+	STAR --runThreadN 40 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 12 20:40:59 ..... started STAR run
+Aug 12 20:40:59 ..... loading genome
+Aug 12 20:44:48 ..... started mapping
+Aug 12 20:51:01 ..... finished mapping
+Aug 12 20:51:04 ..... started sorting BAM
+Aug 12 20:52:38 ..... finished successfully
+2024-08-12 20:52:40 : Finished writing 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007.results.bam
+
+2024-08-12 20:52:40 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq 
+text/plain
+Started analysis of 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 5% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 10% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 15% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 20% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 25% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 30% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 35% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 40% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 45% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 50% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 55% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 60% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 65% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 70% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 75% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 80% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 85% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 90% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Approx 95% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+Analysis complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq
+2024-08-12 20:56:04 : started compression of /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R1_001.fastq 
+2024-08-12 20:56:43 : finished compressing.
+2024-08-12 20:56:43 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq 
+text/plain
+Started analysis of 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 5% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 10% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 15% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 20% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 25% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 30% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 35% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 40% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 45% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 50% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 55% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 60% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 65% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 70% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 75% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 80% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 85% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 90% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Approx 95% complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+Analysis complete for 24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq
+2024-08-12 21:00:08 : started compression of /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X3_20240809_LH00227_0096_A22NGGCLT3_S300_L007_R2_001.fastq 
+2024-08-12 21:00:48 : finished compressing.
+2024-08-12 21:00:48 : indexing bam file.
+2024-08-12 21:01:34 : cleaning up.
+2024-08-12 21:01:34 : moving star progress logs.
+2024-08-12 21:01:34 : moving fastqc files.
+2024-08-12 21:01:34 : moving bam and bai files.
+
+
+
+2024-08-12 21:01:34 : finished with pair of fastqs.
+2024-08-12 21:01:34 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq.gz
+2024-08-12 21:04:07 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq.gz
+2024-08-12 21:06:39 : finished uncompressing. moving on to STAR.
+
+2024-08-12 21:06:39 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Output will be written to: 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007.results
+	STAR --runThreadN 40 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 12 21:06:39 ..... started STAR run
+Aug 12 21:06:39 ..... loading genome
+Aug 12 21:10:29 ..... started mapping
+Aug 12 21:19:03 ..... finished mapping
+Aug 12 21:19:05 ..... started sorting BAM
+Aug 12 21:20:51 ..... finished successfully
+2024-08-12 21:20:53 : Finished writing 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007.results.bam
+
+2024-08-12 21:20:53 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq 
+text/plain
+Started analysis of 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 5% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 10% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 15% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 20% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 25% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 30% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 35% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 40% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 45% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 50% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 55% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 60% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 65% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 70% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 75% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 80% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 85% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 90% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Approx 95% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+Analysis complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq
+2024-08-12 21:24:36 : started compression of /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R1_001.fastq 
+2024-08-12 21:25:11 : finished compressing.
+2024-08-12 21:25:11 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq 
+text/plain
+Started analysis of 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 5% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 10% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 15% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 20% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 25% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 30% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 35% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 40% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 45% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 50% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 55% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 60% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 65% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 70% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 75% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 80% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 85% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 90% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Approx 95% complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+Analysis complete for 24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq
+2024-08-12 21:29:02 : started compression of /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X4_20240809_LH00227_0096_A22NGGCLT3_S301_L007_R2_001.fastq 
+2024-08-12 21:29:46 : finished compressing.
+2024-08-12 21:29:46 : indexing bam file.
+2024-08-12 21:30:33 : cleaning up.
+2024-08-12 21:30:33 : moving star progress logs.
+2024-08-12 21:30:33 : moving fastqc files.
+2024-08-12 21:30:33 : moving bam and bai files.
+
+
+
+2024-08-12 21:30:33 : finished with pair of fastqs.
+2024-08-12 21:30:33 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq.gz
+2024-08-12 21:33:10 : started uncompressing /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq.gz
+2024-08-12 21:35:48 : finished uncompressing. moving on to STAR.
+
+2024-08-12 21:35:48 : Processing files:
+R1: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+R2: /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Output will be written to: 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007.results
+	STAR --runThreadN 40 --genomeDir /uufs/chpc.utah.edu/common/home/holmen-group1/star_ms/starGRCm39 --readFilesIn /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq --outSAMattributes Standard --outSAMtype BAM SortedByCoordinate --outFileNamePrefix 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007.results
+	STAR version: 2.7.11b   compiled: 2024-01-25T16:12:02-05:00 :/home/dobin/data/STAR/STARcode/STAR.master/source
+Aug 12 21:35:48 ..... started STAR run
+Aug 12 21:35:48 ..... loading genome
+Aug 12 21:39:37 ..... started mapping
+Aug 12 21:48:36 ..... finished mapping
+Aug 12 21:48:38 ..... started sorting BAM
+Aug 12 21:50:16 ..... finished successfully
+2024-08-12 21:50:18 : Finished writing 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007.results.bam
+
+2024-08-12 21:50:18 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq 
+text/plain
+Started analysis of 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 5% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 10% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 15% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 20% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 25% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 30% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 35% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 40% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 45% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 50% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 55% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 60% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 65% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 70% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 75% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 80% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 85% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 90% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Approx 95% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+Analysis complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq
+2024-08-12 21:54:11 : started compression of /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R1_001.fastq 
+2024-08-12 21:54:57 : finished compressing.
+2024-08-12 21:54:57 : performing fastQC on /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq 
+text/plain
+Started analysis of 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 5% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 10% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 15% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 20% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 25% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 30% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 35% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 40% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 45% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 50% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 55% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 60% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 65% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 70% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 75% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 80% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 85% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 90% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Approx 95% complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+Analysis complete for 24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq
+2024-08-12 21:58:45 : started compression of /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/24385R/fastq_files/24385X5_20240809_LH00227_0096_A22NGGCLT3_S302_L007_R2_001.fastq 
+2024-08-12 21:59:34 : finished compressing.
+2024-08-12 21:59:34 : indexing bam file.
+2024-08-12 22:00:18 : cleaning up.
+2024-08-12 22:00:18 : moving star progress logs.
+2024-08-12 22:00:18 : moving fastqc files.
+2024-08-12 22:00:18 : moving bam and bai files.
+
+
+
+2024-08-12 22:00:18 : finished with pair of fastqs.
+2024-08-12 22:00:18 : ended job 
+Runtime: 2:32:6
