@@ -1,0 +1,95 @@
+2026-09-29 11:41:43 : started job 
+
+
+
+[M::mm_idx_gen::0.002*1.03] collected minimizers
+[M::mm_idx_gen::0.003*1.26] sorted minimizers
+[M::main::0.003*1.22] loaded/built the index for 1 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.003*1.22] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -d /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta
+[M::main] Real time: 0.004 sec; CPU: 0.004 sec; Peak RSS: 0.003 GB
+
+======================================
+Processing: 27634_raw
+======================================
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+27634_raw complete.
+
+======================================
+Processing: 27648_raw
+======================================
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+27648_raw complete.
+
+======================================
+Processing: 37595_raw
+======================================
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+37595_raw complete.
+
+======================================
+Processing: 37978_raw
+======================================
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+37978_raw complete.
+
+======================================
+Processing: 39904_raw
+======================================
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+39904_raw complete.
+
+======================================
+Processing: 39909_raw
+======================================
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+39909_raw complete.
+
+======================================
+Processing: 43569_raw
+======================================
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+43569_raw complete.
+
+======================================
+Processing: 43604_raw
+======================================
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+43604_raw complete.
+
+======================================
+Processing: 43605_raw
+======================================
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+43605_raw complete.
+2026-09-29 11:42:16 : ended job 
+Runtime: 0:0:33

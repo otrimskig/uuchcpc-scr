@@ -1,0 +1,14 @@
+2026-09-29 11:57:19 : started job 
+
+
+
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895932/slurm_script: line 50: reference,: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895932/slurm_script: line 51: bam,: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895932/slurm_script: line 52: vcf,: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895932/slurm_script: line 53: coverage,: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895932/slurm_script: line 54: qc,: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895932/slurm_script: line 55: tables,: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895932/slurm_script: line 56: read_analysis,: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895932/slurm_script: line 57: logs: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895932/slurm_script: line 58: syntax error near unexpected token `}'
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895932/slurm_script: line 58: `}'

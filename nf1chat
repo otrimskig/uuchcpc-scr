@@ -1,0 +1,1095 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+
+# ============================================================
+# USER SETTINGS
+# ============================================================
+
+REF_GB="reference/amplicon.gb"
+
+FASTQ_DIR="fastq"
+
+OUT="results"
+
+THREADS=8
+
+
+# ------------------------------------------------------------
+# Target region
+#
+# Reference coordinates, 1-based.
+#
+# Leave blank to analyze the entire amplicon.
+#
+# Example:
+#
+# TARGET_START=350
+# TARGET_END=500
+#
+# ------------------------------------------------------------
+
+TARGET_START=""
+
+TARGET_END=""
+
+
+# ------------------------------------------------------------
+# Alignment / quality thresholds
+# ------------------------------------------------------------
+
+MIN_MAPQ=20
+
+MIN_BQ=10
+
+MAX_DEPTH=10000
+
+
+# ============================================================
+# DIRECTORIES
+# ============================================================
+
+mkdir -p "$OUT"/{
+reference,
+bam,
+vcf,
+coverage,
+qc,
+tables,
+read_analysis,
+logs
+}
+
+
+# ============================================================
+# CHECK PROGRAMS
+# ============================================================
+
+for PROGRAM in \
+    minimap2 \
+    samtools \
+    bcftools \
+    seqkit
+do
+
+    if ! command -v "$PROGRAM" >/dev/null 2>&1
+    then
+        echo "ERROR: $PROGRAM not found."
+        exit 1
+    fi
+
+done
+
+
+# ============================================================
+# 1. GenBank -> FASTA
+# ============================================================
+
+echo
+echo "======================================"
+echo "Preparing reference"
+echo "======================================"
+
+
+seqkit seq \
+    -w 0 \
+    "$REF_GB" \
+    > "$OUT/reference/amplicon.fasta"
+
+
+REF="$OUT/reference/amplicon.fasta"
+
+samtools faidx "$REF"
+
+minimap2 \
+    -d "$REF.mmi" \
+    "$REF"
+
+
+# ============================================================
+# 2. Process each sample
+# ============================================================
+
+for FASTQ in \
+    "$FASTQ_DIR"/*.fastq.gz \
+    "$FASTQ_DIR"/*.fq.gz \
+    "$FASTQ_DIR"/*.fastq \
+    "$FASTQ_DIR"/*.fq
+
+do
+
+    [ -e "$FASTQ" ] || continue
+
+
+    BASENAME=$(basename "$FASTQ")
+
+    SAMPLE="${BASENAME%.fastq.gz}"
+    SAMPLE="${SAMPLE%.fq.gz}"
+    SAMPLE="${SAMPLE%.fastq}"
+    SAMPLE="${SAMPLE%.fq}"
+
+
+    echo
+    echo "======================================"
+    echo "Processing $SAMPLE"
+    echo "======================================"
+
+
+    # ========================================================
+    # Count input reads
+    # ========================================================
+
+    if [[ "$FASTQ" == *.gz ]]
+    then
+
+        READS=$(zcat "$FASTQ" | awk 'END {print NR/4}')
+
+    else
+
+        READS=$(awk 'END {print NR/4}' "$FASTQ")
+
+    fi
+
+
+    echo -e \
+        "sample\tinput_reads" \
+        > "$OUT/qc/${SAMPLE}.read_count.tsv"
+
+    echo -e \
+        "$SAMPLE\t$READS" \
+        >> "$OUT/qc/${SAMPLE}.read_count.tsv"
+
+
+    # ========================================================
+    # Align ONT reads
+    # ========================================================
+
+    minimap2 \
+        -t "$THREADS" \
+        -ax map-ont \
+        "$REF.mmi" \
+        "$FASTQ" \
+        2> "$OUT/logs/${SAMPLE}.minimap2.log" \
+    | samtools sort \
+        -@ "$THREADS" \
+        -o "$OUT/bam/${SAMPLE}.sorted.bam"
+
+
+    samtools index \
+        "$OUT/bam/${SAMPLE}.sorted.bam"
+
+
+    # ========================================================
+    # Alignment QC
+    # ========================================================
+
+    samtools flagstat \
+        "$OUT/bam/${SAMPLE}.sorted.bam" \
+        > "$OUT/qc/${SAMPLE}.flagstat.txt"
+
+
+    samtools stats \
+        "$OUT/bam/${SAMPLE}.sorted.bam" \
+        > "$OUT/qc/${SAMPLE}.stats.txt"
+
+
+    # ========================================================
+    # Coverage
+    # ========================================================
+
+    samtools depth \
+        -aa \
+        "$OUT/bam/${SAMPLE}.sorted.bam" \
+        > "$OUT/coverage/${SAMPLE}.depth.tsv"
+
+
+    # ========================================================
+    # Add MD tags
+    #
+    # MD records reference/read mismatches and deletions.
+    #
+    # This allows us to determine WHICH READ contains WHICH
+    # variants.
+    # ========================================================
+
+    echo "Adding MD tags..."
+
+    samtools calmd \
+        -b \
+        "$OUT/bam/${SAMPLE}.sorted.bam" \
+        "$REF" \
+        > "$OUT/bam/${SAMPLE}.calmd.bam"
+
+    samtools index \
+        "$OUT/bam/${SAMPLE}.calmd.bam"
+
+
+    # ========================================================
+    # Conventional VCF
+    #
+    # Retained for amplicon-wide variant discovery.
+    # It is NOT used to determine whether variants occur on
+    # the same read.
+    # ========================================================
+
+    echo "Calling conventional variants..."
+
+    bcftools mpileup \
+        -f "$REF" \
+        -q "$MIN_MAPQ" \
+        -Q "$MIN_BQ" \
+        -d "$MAX_DEPTH" \
+        -Ou \
+        "$OUT/bam/${SAMPLE}.calmd.bam" \
+    | bcftools call \
+        -mv \
+        -Oz \
+        -o "$OUT/vcf/${SAMPLE}.vcf.gz"
+
+
+    bcftools index \
+        -f "$OUT/vcf/${SAMPLE}.vcf.gz"
+
+
+    # ========================================================
+    # READ-LEVEL VARIANT EXTRACTION
+    #
+    # Output:
+    #
+    # sample
+    # read_id
+    # position
+    # reference
+    # alternate
+    # type
+    #
+    # Multiple rows can belong to the SAME read.
+    # ========================================================
+
+    echo "Extracting read-level variants..."
+
+
+    samtools view \
+        -F 0x904 \
+        -q "$MIN_MAPQ" \
+        "$OUT/bam/${SAMPLE}.calmd.bam" \
+    | awk \
+        -v SAMPLE="$SAMPLE" \
+        -v MIN_BQ="$MIN_BQ" \
+        -v TARGET_START="$TARGET_START" \
+        -v TARGET_END="$TARGET_END" \
+        '
+BEGIN {
+
+    OFS="\t"
+
+    print \
+        "sample",
+        "read_id",
+        "chrom",
+        "ref_pos",
+        "ref_base",
+        "alt_base",
+        "variant_type",
+        "base_quality",
+        "mapping_quality",
+        "cigar",
+        "strand"
+
+}
+
+
+# ============================================================
+# Process one BAM alignment
+# ============================================================
+
+{
+
+    read_id = $1
+    flag    = $2
+    chrom   = $3
+    start   = $4
+    mapq    = $5
+    cigar   = $6
+    seq     = $10
+    qual    = $11
+
+    # --------------------------------------------------------
+    # Determine strand
+    # --------------------------------------------------------
+
+    if (and(flag,16))
+        strand="-"
+    else
+        strand="+"
+
+
+
+    # --------------------------------------------------------
+    # Parse CIGAR
+    # --------------------------------------------------------
+
+    cigar_string = cigar
+
+    read_pos = 1
+
+    ref_pos = start
+
+    cigar_len = length(cigar_string)
+
+    number = ""
+
+
+    for (i = 1; i <= cigar_len; i++) {
+
+        c = substr(cigar_string,i,1)
+
+        if (c ~ /[0-9]/) {
+
+            number = number c
+
+            continue
+        }
+
+
+        length_op = number + 0
+
+        number = ""
+
+
+        # ====================================================
+        # MATCH / MISMATCH
+        # ====================================================
+
+        if (c == "M" || c == "=" || c == "X") {
+
+            for (j = 0; j < length_op; j++) {
+
+                rp = ref_pos + j
+
+                qp = read_pos + j
+
+                if (TARGET_START != "" &&
+                    (rp < TARGET_START || rp > TARGET_END))
+                    continue
+
+
+                # Base quality
+                bq = 0
+
+                if (length(qual) >= qp) {
+
+                    qchar = substr(qual,qp,1)
+
+                    bq = index(
+                        sprintf(
+                            "%c",
+                            qchar
+                        ),
+                        qchar
+                    )
+
+                    # ASCII Phred
+                    bq = ord(qchar) - 33
+                }
+
+
+                if (bq < MIN_BQ)
+                    continue
+
+
+                # ------------------------------------------------
+                # Reference base will be filled later from
+                # reference comparison table.
+                #
+                # For now compare using MD-derived mismatches.
+                # ------------------------------------------------
+
+            }
+
+
+            read_pos += length_op
+
+            ref_pos += length_op
+
+        }
+
+
+        # ====================================================
+        # INSERTION
+        # ====================================================
+
+        else if (c == "I") {
+
+            if (
+                TARGET_START == "" ||
+                (ref_pos >= TARGET_START &&
+                 ref_pos <= TARGET_END)
+            ) {
+
+                inserted=""
+
+                for (j=0; j<length_op; j++) {
+
+                    inserted = inserted \
+                        substr(seq,read_pos+j,1)
+
+                }
+
+
+                print \
+                    SAMPLE,
+                    read_id,
+                    chrom,
+                    ref_pos,
+                    "-",
+                    inserted,
+                    "INS",
+                    ".",
+                    mapq,
+                    cigar,
+                    strand
+            }
+
+
+            read_pos += length_op
+
+        }
+
+
+        # ====================================================
+        # DELETION
+        # ====================================================
+
+        else if (c == "D") {
+
+            for (j=0; j<length_op; j++) {
+
+                rp = ref_pos+j
+
+                if (
+                    TARGET_START == "" ||
+                    (rp >= TARGET_START &&
+                     rp <= TARGET_END)
+                ) {
+
+                    print \
+                        SAMPLE,
+                        read_id,
+                        chrom,
+                        rp,
+                        "-",
+                        "-",
+                        "DEL",
+                        ".",
+                        mapq,
+                        cigar,
+                        strand
+                }
+            }
+
+
+            ref_pos += length_op
+
+        }
+
+
+        # ====================================================
+        # SOFT CLIP
+        # ====================================================
+
+        else if (c == "S") {
+
+            read_pos += length_op
+
+        }
+
+
+        # ====================================================
+        # HARD CLIP
+        # ====================================================
+
+        else if (c == "H") {
+
+            # Nothing to do
+
+        }
+
+
+        # ====================================================
+        # SKIPPED REGION
+        # ====================================================
+
+        else if (c == "N") {
+
+            ref_pos += length_op
+
+        }
+
+    }
+
+}
+' \
+    > "$OUT/read_analysis/${SAMPLE}.indels.tsv"
+
+
+    # ========================================================
+    # Extract mismatch information from MD tags
+    #
+    # MD format example:
+    #
+    # 20A15C40
+    #
+    # means:
+    #
+    # 20 matching bases
+    # A mismatch
+    # 15 matching bases
+    # C mismatch
+    # 40 matching bases
+    # ========================================================
+
+
+    samtools view \
+        -F 0x904 \
+        -q "$MIN_MAPQ" \
+        "$OUT/bam/${SAMPLE}.calmd.bam" \
+    | awk \
+        -v SAMPLE="$SAMPLE" \
+        -v TARGET_START="$TARGET_START" \
+        -v TARGET_END="$TARGET_END" \
+        '
+BEGIN {
+
+    OFS="\t"
+
+    print \
+        "sample",
+        "read_id",
+        "chrom",
+        "ref_pos",
+        "ref_base",
+        "alt_base",
+        "variant_type",
+        "base_quality",
+        "mapping_quality",
+        "cigar",
+        "strand"
+
+}
+
+
+{
+
+    read_id=$1
+    flag=$2
+    chrom=$3
+    start=$4
+    mapq=$5
+    cigar=$6
+    seq=$10
+    qual=$11
+
+
+    # --------------------------------------------------------
+    # Locate MD tag
+    # --------------------------------------------------------
+
+    md=""
+
+    for(i=12;i<=NF;i++) {
+
+        if($i ~ /^MD:Z:/) {
+
+            md=substr($i,6)
+
+            break
+        }
+    }
+
+
+    if(md=="")
+        next
+
+
+    if(and(flag,16))
+        strand="-"
+    else
+        strand="+"
+
+
+    # --------------------------------------------------------
+    # Walk through CIGAR and MD simultaneously
+    #
+    # First create mapping from reference positions to
+    # read positions.
+    # --------------------------------------------------------
+
+    read_pos=1
+    ref_pos=start
+
+    cigar_string=cigar
+
+    number=""
+
+
+    # Store reference position -> read position
+    # and account for insertions/deletions.
+
+    for(i=1;i<=length(cigar_string);i++) {
+
+        c=substr(cigar_string,i,1)
+
+        if(c ~ /[0-9]/) {
+
+            number=number c
+            continue
+        }
+
+        n=number+0
+        number=""
+
+
+        if(c=="M" || c=="=" || c=="X") {
+
+            for(j=0;j<n;j++) {
+
+                ref_for_read[read_pos+j]=ref_pos+j
+                read_for_ref[ref_pos+j]=read_pos+j
+            }
+
+            read_pos+=n
+            ref_pos+=n
+
+        }
+
+        else if(c=="I") {
+
+            read_pos+=n
+
+        }
+
+        else if(c=="D") {
+
+            ref_pos+=n
+
+        }
+
+        else if(c=="S") {
+
+            read_pos+=n
+
+        }
+
+        else if(c=="N") {
+
+            ref_pos+=n
+
+        }
+
+    }
+
+
+    # --------------------------------------------------------
+    # Parse MD
+    # --------------------------------------------------------
+
+    md_pos=0
+
+    md_string=md
+
+
+    token=""
+
+    i=1
+
+
+    while(i<=length(md_string)) {
+
+        ch=substr(md_string,i,1)
+
+
+        # ----------------------------------------------------
+        # Number = matching reference bases
+        # ----------------------------------------------------
+
+        if(ch ~ /[0-9]/) {
+
+            token=""
+
+            while(
+                i<=length(md_string) &&
+                substr(md_string,i,1) ~ /[0-9]/
+            ) {
+
+                token=token substr(md_string,i,1)
+
+                i++
+            }
+
+            md_pos += token+0
+
+            continue
+        }
+
+
+        # ----------------------------------------------------
+        # Deletion
+        # ----------------------------------------------------
+
+        if(ch=="^") {
+
+            i++
+
+            deleted=""
+
+            while(
+                i<=length(md_string) &&
+                substr(md_string,i,1) ~ /[A-Z]/
+            ) {
+
+                deleted=deleted substr(md_string,i,1)
+
+                i++
+            }
+
+            md_pos += length(deleted)
+
+            continue
+        }
+
+
+        # ----------------------------------------------------
+        # Mismatch
+        # ----------------------------------------------------
+
+        if(ch ~ /[A-Z]/) {
+
+            ref_base=ch
+
+            rp=start+md_pos-1
+
+            qp=read_for_ref[rp]
+
+            if(qp!="") {
+
+                alt_base=substr(seq,qp+0,1)
+
+
+                if(
+                    TARGET_START=="" ||
+                    (rp>=TARGET_START && rp<=TARGET_END)
+                ) {
+
+                    # ------------------------------------------------
+                    # Base quality
+                    # ------------------------------------------------
+
+                    bq=0
+
+                    if(length(qual)>=qp) {
+
+                        # awk POSIX does not have ord(), so use
+                        # a lookup table.
+                        qchar=substr(qual,qp,1)
+
+                        alphabet="!\"#$%&'\''()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+
+                        bq=index(alphabet,qchar)-1
+                    }
+
+
+                    if(bq>=MIN_BQ) {
+
+                        print \
+                            SAMPLE,
+                            read_id,
+                            chrom,
+                            rp,
+                            ref_base,
+                            alt_base,
+                            "SNV",
+                            bq,
+                            mapq,
+                            cigar,
+                            strand
+                    }
+                }
+            }
+
+
+            md_pos++
+
+            i++
+
+            continue
+        }
+
+
+        i++
+
+    }
+
+}
+' \
+    > "$OUT/read_analysis/${SAMPLE}.snvs.tsv"
+
+
+    # ========================================================
+    # Combine SNVs + indels
+    # ========================================================
+
+    {
+        head -n 1 "$OUT/read_analysis/${SAMPLE}.snvs.tsv"
+
+        tail -n +2 \
+            "$OUT/read_analysis/${SAMPLE}.snvs.tsv"
+
+        tail -n +2 \
+            "$OUT/read_analysis/${SAMPLE}.indels.tsv"
+
+    } \
+    > "$OUT/read_analysis/${SAMPLE}.read_variants.tsv"
+
+
+    echo "$SAMPLE complete."
+
+done
+
+
+# ============================================================
+# 6. Combine all samples
+# ============================================================
+
+echo
+echo "======================================"
+echo "Combining read-level variant tables"
+echo "======================================"
+
+
+{
+    echo -e \
+        "sample\tread_id\tchrom\tref_pos\tref_base\talt_base\tvariant_type\tbase_quality\tmapping_quality\tcigar\tstrand"
+
+    for FILE in \
+        "$OUT"/read_analysis/*.read_variants.tsv
+    do
+
+        tail -n +2 "$FILE"
+
+    done
+
+} > "$OUT/tables/all_read_variants.tsv"
+
+
+# ============================================================
+# 7. Create one row per READ
+#
+# This is the table that answers:
+#
+#   "Does this particular read contain multiple variants?"
+#
+# ============================================================
+
+echo
+echo "Creating read-level haplotypes..."
+
+
+awk '
+BEGIN {
+    OFS="\t"
+}
+
+NR==1 {
+    next
+}
+
+{
+
+    sample=$1
+    read=$2
+
+    variant=$4 ":" $5 ">" $6
+
+    key=sample SUBSEP read
+
+
+    if (!(key in variants)) {
+
+        variants[key]=variant
+
+        n[key]=1
+
+    }
+
+    else {
+
+        variants[key]=variants[key] ";" variant
+
+        n[key]++
+
+    }
+
+}
+
+
+END {
+
+    print \
+        "sample",
+        "read_id",
+        "n_variants",
+        "variants"
+
+
+    for(key in variants) {
+
+        split(key,a,SUBSEP)
+
+        print \
+            a[1],
+            a[2],
+            n[key],
+            variants[key]
+    }
+
+}
+' \
+    "$OUT/tables/all_read_variants.tsv" \
+    | sort \
+    > "$OUT/tables/read_haplotypes.tsv"
+
+
+# ============================================================
+# 8. Count identical read haplotypes
+# ============================================================
+
+echo
+echo "Creating haplotype frequency table..."
+
+
+awk '
+BEGIN {
+    OFS="\t"
+}
+
+NR==1 {
+    next
+}
+
+{
+
+    key=$1 SUBSEP $4
+
+    count[key]++
+
+    sample[key]=$1
+
+}
+
+END {
+
+    print \
+        "sample",
+        "n_reads",
+        "variant_haplotype"
+
+
+    for(key in count) {
+
+        split(key,a,SUBSEP)
+
+        print \
+            a[1],
+            count[key],
+            a[2]
+    }
+
+}
+' \
+    "$OUT/tables/read_haplotypes.tsv" \
+    | sort \
+    > "$OUT/tables/haplotype_counts.tsv"
+
+
+# ============================================================
+# 9. Variant observations by position
+# ============================================================
+
+echo
+echo "Creating per-position variant counts..."
+
+
+awk '
+BEGIN {
+    OFS="\t"
+}
+
+NR==1 {
+    next
+}
+
+{
+
+    key=$1 SUBSEP $3 SUBSEP $4 SUBSEP $5 SUBSEP $6
+
+    count[key]++
+
+}
+
+END {
+
+    print \
+        "sample",
+        "chrom",
+        "ref_pos",
+        "ref_base",
+        "alt_base",
+        "n_reads"
+
+
+    for(key in count) {
+
+        split(key,a,SUBSEP)
+
+        print \
+            a[1],
+            a[2],
+            a[3],
+            a[4],
+            a[5],
+            count[key]
+    }
+
+}
+' \
+    "$OUT/tables/all_read_variants.tsv" \
+    | sort -k1,1 -k3,3n \
+    > "$OUT/tables/variant_read_counts.tsv"
+
+
+# ============================================================
+# DONE
+# ============================================================
+
+echo
+echo "======================================"
+echo "PIPELINE COMPLETE"
+echo "======================================"
+
+echo
+echo "Important outputs:"
+echo
+echo "  $OUT/tables/all_read_variants.tsv"
+echo "  $OUT/tables/read_haplotypes.tsv"
+echo "  $OUT/tables/haplotype_counts.tsv"
+echo "  $OUT/tables/variant_read_counts.tsv"
+echo
+echo "BAM:"
+echo
+echo "  $OUT/bam/"
+echo
+echo "VCF:"
+echo
+echo "  $OUT/vcf/"

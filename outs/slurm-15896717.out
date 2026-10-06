@@ -1,0 +1,62 @@
+2026-09-29 12:07:45 : started job 
+
+
+
+
+
+
+[M::mm_idx_gen::0.002*1.40] collected minimizers
+[M::mm_idx_gen::0.003*1.95] sorted minimizers
+[M::main::0.004*1.68] loaded/built the index for 1 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.004*1.67] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -d /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta
+[M::main] Real time: 0.005 sec; CPU: 0.006 sec; Peak RSS: 0.003 GB
+
+
+
+
+======================================
+
+
+
+
+======================================
+Processing 27634_raw
+======================================
+Adding MD tags...
+Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 10000
+Extracting read-level variants...
+awk: cmd. line:105:                     bq = index(
+awk: cmd. line:105:                                ^ unexpected newline or end of string
+awk: cmd. line:108:                             qchar
+awk: cmd. line:108:                                  ^ unexpected newline or end of string
+awk: cmd. line:110:                         qchar
+awk: cmd. line:110:                              ^ unexpected newline or end of string
+awk: cmd. line:145:             if (
+awk: cmd. line:145:                 ^ unexpected newline or end of string
+awk: cmd. line:148:             ) {
+awk: cmd. line:148:             ^ syntax error
+awk: cmd. line:191:                 if (
+awk: cmd. line:191:                     ^ unexpected newline or end of string
+awk: cmd. line:194:                 ) {
+awk: cmd. line:194:                 ^ syntax error
+awk: cmd. line:161:             while(
+awk: cmd. line:161:                   ^ unexpected newline or end of string
+awk: cmd. line:163:             ) {
+awk: cmd. line:163:             ^ syntax error
+awk: cmd. line:187:             while(
+awk: cmd. line:187:                   ^ unexpected newline or end of string
+awk: cmd. line:189:             ) {
+awk: cmd. line:189:             ^ syntax error
+awk: cmd. line:220:                 if(
+awk: cmd. line:220:                    ^ unexpected newline or end of string
+awk: cmd. line:222:                 ) {
+awk: cmd. line:222:                 ^ syntax error
+27634_raw complete.
+2026-09-29 12:07:55 : ended job 
+Runtime: 0:0:10

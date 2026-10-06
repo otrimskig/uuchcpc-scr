@@ -1,0 +1,422 @@
+2026-10-05 17:17:35 : started job 
+
+
+
+
+
+
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta
+[faidx] Could not build fai index /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.fai
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta': No such file or directory
+
+
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta
+[faidx] Could not build fai index /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.fai
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta': No such file or directory
+
+========================================
+Processing: 26827_raw
+========================================
+1. Aligning reads...
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.mmi': No such file or directory
+2. Converting SAM to BAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/01_alignments/26827_raw.sam".
+3. Sorting BAM...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.bam" : No such file or directory
+samtools sort: can't open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam" : No such file or directory
+samtools index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam": No such file or directory
+4. Alignment QC...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam" : No such file or directory
+samtools flagstat: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam" : No such file or directory
+samtools stats: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam": No such file or directory
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch276//job16066188/slurm_script: line 104: 40947 Segmentation fault      (core dumped) samtools stats "$SORTED_BAM" > "$OUT/02_bam/${SAMPLE}.stats.txt"
+5. Calculating coverage...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam" : No such file or directory
+samtools depth: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam": No such file or directory
+6. Adding MD tags...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam" : No such file or directory
+samtools calmd: Failed to open input file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam': No such file or directory
+samtools index: "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/26827_raw.calmd.bam" is in a format that cannot be usefully indexed
+7. Creating filtered SAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/26827_raw.calmd.bam".
+8. Creating mpileup...
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta : No such file or directory
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/26827_raw.mpileup.bcf" : No such file or directory
+Failed to read from /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/26827_raw.mpileup.bcf: No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/26827_raw.vcf.gz" : No such file or directory
+index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/26827_raw.vcf.gz"
+10. Extracting read-level variants...
+Cannot open reference /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta: No such file or directory at - line 20.
+WARNING: no read-level variants found for 26827_raw
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam" : No such file or directory
+samtools view: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26827_raw.sorted.bam" for reading: No such file or directory
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/26827_raw.calmd.bam".
+
+Finished: 26827_raw
+
+
+========================================
+Processing: 26867_raw
+========================================
+1. Aligning reads...
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.mmi': No such file or directory
+2. Converting SAM to BAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/01_alignments/26867_raw.sam".
+3. Sorting BAM...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.bam" : No such file or directory
+samtools sort: can't open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam" : No such file or directory
+samtools index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam": No such file or directory
+4. Alignment QC...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam" : No such file or directory
+samtools flagstat: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam" : No such file or directory
+samtools stats: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam": No such file or directory
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch276//job16066188/slurm_script: line 104: 40971 Segmentation fault      (core dumped) samtools stats "$SORTED_BAM" > "$OUT/02_bam/${SAMPLE}.stats.txt"
+5. Calculating coverage...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam" : No such file or directory
+samtools depth: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam": No such file or directory
+6. Adding MD tags...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam" : No such file or directory
+samtools calmd: Failed to open input file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam': No such file or directory
+samtools index: "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/26867_raw.calmd.bam" is in a format that cannot be usefully indexed
+7. Creating filtered SAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/26867_raw.calmd.bam".
+8. Creating mpileup...
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta : No such file or directory
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/26867_raw.mpileup.bcf" : No such file or directory
+Failed to read from /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/26867_raw.mpileup.bcf: No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/26867_raw.vcf.gz" : No such file or directory
+index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/26867_raw.vcf.gz"
+10. Extracting read-level variants...
+Cannot open reference /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta: No such file or directory at - line 20.
+WARNING: no read-level variants found for 26867_raw
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam" : No such file or directory
+samtools view: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/26867_raw.sorted.bam" for reading: No such file or directory
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/26867_raw.calmd.bam".
+
+Finished: 26867_raw
+
+
+========================================
+Processing: 27415_raw
+========================================
+1. Aligning reads...
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.mmi': No such file or directory
+2. Converting SAM to BAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/01_alignments/27415_raw.sam".
+3. Sorting BAM...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.bam" : No such file or directory
+samtools sort: can't open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam" : No such file or directory
+samtools index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam": No such file or directory
+4. Alignment QC...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam" : No such file or directory
+samtools flagstat: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam" : No such file or directory
+samtools stats: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam": No such file or directory
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch276//job16066188/slurm_script: line 104: 40995 Segmentation fault      (core dumped) samtools stats "$SORTED_BAM" > "$OUT/02_bam/${SAMPLE}.stats.txt"
+5. Calculating coverage...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam" : No such file or directory
+samtools depth: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam": No such file or directory
+6. Adding MD tags...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam" : No such file or directory
+samtools calmd: Failed to open input file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam': No such file or directory
+samtools index: "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/27415_raw.calmd.bam" is in a format that cannot be usefully indexed
+7. Creating filtered SAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/27415_raw.calmd.bam".
+8. Creating mpileup...
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta : No such file or directory
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/27415_raw.mpileup.bcf" : No such file or directory
+Failed to read from /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/27415_raw.mpileup.bcf: No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/27415_raw.vcf.gz" : No such file or directory
+index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/27415_raw.vcf.gz"
+10. Extracting read-level variants...
+Cannot open reference /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta: No such file or directory at - line 20.
+WARNING: no read-level variants found for 27415_raw
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam" : No such file or directory
+samtools view: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/27415_raw.sorted.bam" for reading: No such file or directory
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/27415_raw.calmd.bam".
+
+Finished: 27415_raw
+
+
+========================================
+Processing: 35796_raw
+========================================
+1. Aligning reads...
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.mmi': No such file or directory
+2. Converting SAM to BAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/01_alignments/35796_raw.sam".
+3. Sorting BAM...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.bam" : No such file or directory
+samtools sort: can't open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam" : No such file or directory
+samtools index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam": No such file or directory
+4. Alignment QC...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam" : No such file or directory
+samtools flagstat: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam" : No such file or directory
+samtools stats: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam": No such file or directory
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch276//job16066188/slurm_script: line 104: 41019 Segmentation fault      (core dumped) samtools stats "$SORTED_BAM" > "$OUT/02_bam/${SAMPLE}.stats.txt"
+5. Calculating coverage...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam" : No such file or directory
+samtools depth: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam": No such file or directory
+6. Adding MD tags...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam" : No such file or directory
+samtools calmd: Failed to open input file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam': No such file or directory
+samtools index: "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/35796_raw.calmd.bam" is in a format that cannot be usefully indexed
+7. Creating filtered SAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/35796_raw.calmd.bam".
+8. Creating mpileup...
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta : No such file or directory
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/35796_raw.mpileup.bcf" : No such file or directory
+Failed to read from /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/35796_raw.mpileup.bcf: No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/35796_raw.vcf.gz" : No such file or directory
+index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/35796_raw.vcf.gz"
+10. Extracting read-level variants...
+Cannot open reference /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta: No such file or directory at - line 20.
+WARNING: no read-level variants found for 35796_raw
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam" : No such file or directory
+samtools view: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/35796_raw.sorted.bam" for reading: No such file or directory
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/35796_raw.calmd.bam".
+
+Finished: 35796_raw
+
+
+========================================
+Processing: 37834_raw
+========================================
+1. Aligning reads...
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.mmi': No such file or directory
+2. Converting SAM to BAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/01_alignments/37834_raw.sam".
+3. Sorting BAM...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.bam" : No such file or directory
+samtools sort: can't open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam" : No such file or directory
+samtools index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam": No such file or directory
+4. Alignment QC...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam" : No such file or directory
+samtools flagstat: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam" : No such file or directory
+samtools stats: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam": No such file or directory
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch276//job16066188/slurm_script: line 104: 41043 Segmentation fault      (core dumped) samtools stats "$SORTED_BAM" > "$OUT/02_bam/${SAMPLE}.stats.txt"
+5. Calculating coverage...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam" : No such file or directory
+samtools depth: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam": No such file or directory
+6. Adding MD tags...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam" : No such file or directory
+samtools calmd: Failed to open input file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam': No such file or directory
+samtools index: "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/37834_raw.calmd.bam" is in a format that cannot be usefully indexed
+7. Creating filtered SAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/37834_raw.calmd.bam".
+8. Creating mpileup...
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta : No such file or directory
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/37834_raw.mpileup.bcf" : No such file or directory
+Failed to read from /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/37834_raw.mpileup.bcf: No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/37834_raw.vcf.gz" : No such file or directory
+index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/37834_raw.vcf.gz"
+10. Extracting read-level variants...
+Cannot open reference /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta: No such file or directory at - line 20.
+WARNING: no read-level variants found for 37834_raw
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam" : No such file or directory
+samtools view: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37834_raw.sorted.bam" for reading: No such file or directory
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/37834_raw.calmd.bam".
+
+Finished: 37834_raw
+
+
+========================================
+Processing: 37973_raw
+========================================
+1. Aligning reads...
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.mmi': No such file or directory
+2. Converting SAM to BAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/01_alignments/37973_raw.sam".
+3. Sorting BAM...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.bam" : No such file or directory
+samtools sort: can't open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam" : No such file or directory
+samtools index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam": No such file or directory
+4. Alignment QC...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam" : No such file or directory
+samtools flagstat: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam" : No such file or directory
+samtools stats: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam": No such file or directory
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch276//job16066188/slurm_script: line 104: 41067 Segmentation fault      (core dumped) samtools stats "$SORTED_BAM" > "$OUT/02_bam/${SAMPLE}.stats.txt"
+5. Calculating coverage...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam" : No such file or directory
+samtools depth: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam": No such file or directory
+6. Adding MD tags...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam" : No such file or directory
+samtools calmd: Failed to open input file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam': No such file or directory
+samtools index: "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/37973_raw.calmd.bam" is in a format that cannot be usefully indexed
+7. Creating filtered SAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/37973_raw.calmd.bam".
+8. Creating mpileup...
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta : No such file or directory
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/37973_raw.mpileup.bcf" : No such file or directory
+Failed to read from /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/37973_raw.mpileup.bcf: No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/37973_raw.vcf.gz" : No such file or directory
+index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/37973_raw.vcf.gz"
+10. Extracting read-level variants...
+Cannot open reference /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta: No such file or directory at - line 20.
+WARNING: no read-level variants found for 37973_raw
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam" : No such file or directory
+samtools view: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/37973_raw.sorted.bam" for reading: No such file or directory
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/37973_raw.calmd.bam".
+
+Finished: 37973_raw
+
+
+========================================
+Processing: 39472_raw
+========================================
+1. Aligning reads...
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.mmi': No such file or directory
+2. Converting SAM to BAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/01_alignments/39472_raw.sam".
+3. Sorting BAM...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.bam" : No such file or directory
+samtools sort: can't open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam" : No such file or directory
+samtools index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam": No such file or directory
+4. Alignment QC...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam" : No such file or directory
+samtools flagstat: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam" : No such file or directory
+samtools stats: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam": No such file or directory
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch276//job16066188/slurm_script: line 104: 41092 Segmentation fault      (core dumped) samtools stats "$SORTED_BAM" > "$OUT/02_bam/${SAMPLE}.stats.txt"
+5. Calculating coverage...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam" : No such file or directory
+samtools depth: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam": No such file or directory
+6. Adding MD tags...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam" : No such file or directory
+samtools calmd: Failed to open input file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam': No such file or directory
+samtools index: "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/39472_raw.calmd.bam" is in a format that cannot be usefully indexed
+7. Creating filtered SAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/39472_raw.calmd.bam".
+8. Creating mpileup...
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta : No such file or directory
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/39472_raw.mpileup.bcf" : No such file or directory
+Failed to read from /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/39472_raw.mpileup.bcf: No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/39472_raw.vcf.gz" : No such file or directory
+index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/39472_raw.vcf.gz"
+10. Extracting read-level variants...
+Cannot open reference /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta: No such file or directory at - line 20.
+WARNING: no read-level variants found for 39472_raw
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam" : No such file or directory
+samtools view: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39472_raw.sorted.bam" for reading: No such file or directory
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/39472_raw.calmd.bam".
+
+Finished: 39472_raw
+
+
+========================================
+Processing: 39787_raw
+========================================
+1. Aligning reads...
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.mmi': No such file or directory
+2. Converting SAM to BAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/01_alignments/39787_raw.sam".
+3. Sorting BAM...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.bam" : No such file or directory
+samtools sort: can't open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam" : No such file or directory
+samtools index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam": No such file or directory
+4. Alignment QC...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam" : No such file or directory
+samtools flagstat: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam" : No such file or directory
+samtools stats: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam": No such file or directory
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch276//job16066188/slurm_script: line 104: 41116 Segmentation fault      (core dumped) samtools stats "$SORTED_BAM" > "$OUT/02_bam/${SAMPLE}.stats.txt"
+5. Calculating coverage...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam" : No such file or directory
+samtools depth: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam": No such file or directory
+6. Adding MD tags...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam" : No such file or directory
+samtools calmd: Failed to open input file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam': No such file or directory
+samtools index: "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/39787_raw.calmd.bam" is in a format that cannot be usefully indexed
+7. Creating filtered SAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/39787_raw.calmd.bam".
+8. Creating mpileup...
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta : No such file or directory
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/39787_raw.mpileup.bcf" : No such file or directory
+Failed to read from /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/39787_raw.mpileup.bcf: No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/39787_raw.vcf.gz" : No such file or directory
+index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/39787_raw.vcf.gz"
+10. Extracting read-level variants...
+Cannot open reference /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta: No such file or directory at - line 20.
+WARNING: no read-level variants found for 39787_raw
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam" : No such file or directory
+samtools view: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/39787_raw.sorted.bam" for reading: No such file or directory
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/39787_raw.calmd.bam".
+
+Finished: 39787_raw
+
+
+========================================
+Processing: 43600_raw
+========================================
+1. Aligning reads...
+[ERROR] failed to open file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta.mmi': No such file or directory
+2. Converting SAM to BAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/01_alignments/43600_raw.sam".
+3. Sorting BAM...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.bam" : No such file or directory
+samtools sort: can't open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam" : No such file or directory
+samtools index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam": No such file or directory
+4. Alignment QC...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam" : No such file or directory
+samtools flagstat: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam": No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam" : No such file or directory
+samtools stats: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam": No such file or directory
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch276//job16066188/slurm_script: line 104: 41140 Segmentation fault      (core dumped) samtools stats "$SORTED_BAM" > "$OUT/02_bam/${SAMPLE}.stats.txt"
+5. Calculating coverage...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam" : No such file or directory
+samtools depth: Cannot open input file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam": No such file or directory
+6. Adding MD tags...
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam" : No such file or directory
+samtools calmd: Failed to open input file '/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam': No such file or directory
+samtools index: "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/43600_raw.calmd.bam" is in a format that cannot be usefully indexed
+7. Creating filtered SAM...
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/43600_raw.calmd.bam".
+8. Creating mpileup...
+[E::fai_build3_core] Failed to open the file /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta : No such file or directory
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/43600_raw.mpileup.bcf" : No such file or directory
+Failed to read from /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/05_pileup/43600_raw.mpileup.bcf: No such file or directory
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/43600_raw.vcf.gz" : No such file or directory
+index: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/06_vcf/43600_raw.vcf.gz"
+10. Extracting read-level variants...
+Cannot open reference /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/nf1crisprfasta_new.fasta: No such file or directory at - line 20.
+WARNING: no read-level variants found for 43600_raw
+[E::hts_open_format] Failed to open file "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam" : No such file or directory
+samtools view: failed to open "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/02_bam/43600_raw.sorted.bam" for reading: No such file or directory
+[main_samview] fail to read the header from "/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403/results/03_calmd/43600_raw.calmd.bam".
+
+Finished: 43600_raw
+
+2026-10-05 17:17:46 : ended job 
+Runtime: 0:0:11

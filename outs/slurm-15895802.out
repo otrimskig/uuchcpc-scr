@@ -1,0 +1,95 @@
+2026-09-29 11:39:08 : started job 
+
+
+
+[M::mm_idx_gen::0.003*0.84] collected minimizers
+[M::mm_idx_gen::0.003*1.05] sorted minimizers
+[M::main::0.004*1.04] loaded/built the index for 1 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.004*1.04] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -d /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta
+[M::main] Real time: 0.005 sec; CPU: 0.004 sec; Peak RSS: 0.003 GB
+
+======================================
+Processing: 27634_raw
+======================================
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 160: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 166: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 172: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 180: bcftools: command not found
+27634_raw complete.
+
+======================================
+Processing: 27648_raw
+======================================
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 160: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 166: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 172: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 180: bcftools: command not found
+27648_raw complete.
+
+======================================
+Processing: 37595_raw
+======================================
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 160: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 166: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 172: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 180: bcftools: command not found
+37595_raw complete.
+
+======================================
+Processing: 37978_raw
+======================================
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 160: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 166: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 172: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 180: bcftools: command not found
+37978_raw complete.
+
+======================================
+Processing: 39904_raw
+======================================
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 160: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 166: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 172: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 180: bcftools: command not found
+39904_raw complete.
+
+======================================
+Processing: 39909_raw
+======================================
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 160: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 166: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 172: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 180: bcftools: command not found
+39909_raw complete.
+
+======================================
+Processing: 43569_raw
+======================================
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 160: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 166: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 172: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 180: bcftools: command not found
+43569_raw complete.
+
+======================================
+Processing: 43604_raw
+======================================
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 160: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 166: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 172: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 180: bcftools: command not found
+43604_raw complete.
+
+======================================
+Processing: 43605_raw
+======================================
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 160: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 166: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 172: bcftools: command not found
+/uufs/notchpeak.peaks/sys/var/slurm/slurmd.spool/notch445//job15895802/slurm_script: line 180: bcftools: command not found
+43605_raw complete.
+2026-09-29 11:39:38 : ended job 
+Runtime: 0:0:30

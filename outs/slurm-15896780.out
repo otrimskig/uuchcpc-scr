@@ -1,0 +1,299 @@
+2026-09-29 12:28:12 : started job 
+
+
+
+
+
+
+[M::mm_idx_gen::0.003*1.17] collected minimizers
+[M::mm_idx_gen::0.004*1.69] sorted minimizers
+[M::main::0.005*1.53] loaded/built the index for 1 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.005*1.52] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -d /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta
+[M::main] Real time: 0.006 sec; CPU: 0.008 sec; Peak RSS: 0.003 GB
+
+
+[M::mm_idx_gen::0.002*1.39] collected minimizers
+[M::mm_idx_gen::0.003*1.90] sorted minimizers
+[M::main::0.004*1.66] loaded/built the index for 1 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.004*1.65] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -d /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta
+[M::main] Real time: 0.005 sec; CPU: 0.007 sec; Peak RSS: 0.003 GB
+
+========================================
+Processing: 27634_raw
+========================================
+1. Aligning reads...
+[M::main::0.008*0.41] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.008*0.42] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.008*0.43] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::worker_pipeline::3.393*0.98] mapped 10000 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -t  -ax map-ont -o /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/01_alignments/27634_raw.sam /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/raw_fastq/27634_raw.fastq.gz
+[M::main] Real time: 3.395 sec; CPU: 3.311 sec; Peak RSS: 0.026 GB
+2. Converting SAM to BAM...
+3. Sorting BAM...
+4. Alignment QC...
+5. Calculating coverage...
+6. Adding MD tags...
+7. Creating filtered SAM...
+8. Creating mpileup...
+[mpileup] 1 samples in 1 input files
+[mpileup] Max depth set to maximum value (2147483647)
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+10. Extracting read-level variants...
+Read-level variants written to:
+  /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/07_read_analysis/27634_raw.read_variants.tsv
+
+Finished: 27634_raw
+
+
+========================================
+Processing: 27648_raw
+========================================
+1. Aligning reads...
+[M::main::0.018*0.16] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.018*0.16] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.018*0.16] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::worker_pipeline::3.396*0.98] mapped 10000 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -t  -ax map-ont -o /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/01_alignments/27648_raw.sam /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/raw_fastq/27648_raw.fastq.gz
+[M::main] Real time: 3.397 sec; CPU: 3.340 sec; Peak RSS: 0.025 GB
+2. Converting SAM to BAM...
+3. Sorting BAM...
+4. Alignment QC...
+5. Calculating coverage...
+6. Adding MD tags...
+7. Creating filtered SAM...
+8. Creating mpileup...
+[mpileup] 1 samples in 1 input files
+[mpileup] Max depth set to maximum value (2147483647)
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+10. Extracting read-level variants...
+Read-level variants written to:
+  /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/07_read_analysis/27648_raw.read_variants.tsv
+
+Finished: 27648_raw
+
+
+========================================
+Processing: 37595_raw
+========================================
+1. Aligning reads...
+[M::main::0.003*0.99] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.003*0.99] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.003*0.99] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::worker_pipeline::3.408*0.98] mapped 10000 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -t  -ax map-ont -o /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/01_alignments/37595_raw.sam /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/raw_fastq/37595_raw.fastq.gz
+[M::main] Real time: 3.409 sec; CPU: 3.354 sec; Peak RSS: 0.026 GB
+2. Converting SAM to BAM...
+3. Sorting BAM...
+4. Alignment QC...
+5. Calculating coverage...
+6. Adding MD tags...
+7. Creating filtered SAM...
+8. Creating mpileup...
+[mpileup] 1 samples in 1 input files
+[mpileup] Max depth set to maximum value (2147483647)
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+10. Extracting read-level variants...
+Read-level variants written to:
+  /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/07_read_analysis/37595_raw.read_variants.tsv
+
+Finished: 37595_raw
+
+
+========================================
+Processing: 37978_raw
+========================================
+1. Aligning reads...
+[M::main::0.003*1.07] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.003*1.07] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.003*1.07] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::worker_pipeline::3.353*0.99] mapped 10000 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -t  -ax map-ont -o /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/01_alignments/37978_raw.sam /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/raw_fastq/37978_raw.fastq.gz
+[M::main] Real time: 3.355 sec; CPU: 3.325 sec; Peak RSS: 0.026 GB
+2. Converting SAM to BAM...
+3. Sorting BAM...
+4. Alignment QC...
+5. Calculating coverage...
+6. Adding MD tags...
+7. Creating filtered SAM...
+8. Creating mpileup...
+[mpileup] 1 samples in 1 input files
+[mpileup] Max depth set to maximum value (2147483647)
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+10. Extracting read-level variants...
+Read-level variants written to:
+  /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/07_read_analysis/37978_raw.read_variants.tsv
+
+Finished: 37978_raw
+
+
+========================================
+Processing: 39904_raw
+========================================
+1. Aligning reads...
+[M::main::0.002*1.07] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.003*1.07] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.003*1.07] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::worker_pipeline::3.412*0.99] mapped 10000 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -t  -ax map-ont -o /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/01_alignments/39904_raw.sam /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/raw_fastq/39904_raw.fastq.gz
+[M::main] Real time: 3.413 sec; CPU: 3.362 sec; Peak RSS: 0.026 GB
+2. Converting SAM to BAM...
+3. Sorting BAM...
+4. Alignment QC...
+5. Calculating coverage...
+6. Adding MD tags...
+[bam_fillmd1] no sequence in alignment record for 'a1ac25d9-614d-4b42-8346-99bf04b562aa' at nf1crisprfasta:1419, skipped
+[calmd] Warning: 1 records skipped due to no query sequence
+7. Creating filtered SAM...
+8. Creating mpileup...
+[mpileup] 1 samples in 1 input files
+[mpileup] Max depth set to maximum value (2147483647)
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+10. Extracting read-level variants...
+Read-level variants written to:
+  /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/07_read_analysis/39904_raw.read_variants.tsv
+
+Finished: 39904_raw
+
+
+========================================
+Processing: 39909_raw
+========================================
+1. Aligning reads...
+[M::main::0.003*1.10] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.003*1.10] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.003*1.09] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::worker_pipeline::3.386*0.99] mapped 10000 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -t  -ax map-ont -o /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/01_alignments/39909_raw.sam /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/raw_fastq/39909_raw.fastq.gz
+[M::main] Real time: 3.387 sec; CPU: 3.345 sec; Peak RSS: 0.026 GB
+2. Converting SAM to BAM...
+3. Sorting BAM...
+4. Alignment QC...
+5. Calculating coverage...
+6. Adding MD tags...
+7. Creating filtered SAM...
+8. Creating mpileup...
+[mpileup] 1 samples in 1 input files
+[mpileup] Max depth set to maximum value (2147483647)
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+10. Extracting read-level variants...
+Read-level variants written to:
+  /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/07_read_analysis/39909_raw.read_variants.tsv
+
+Finished: 39909_raw
+
+
+========================================
+Processing: 43569_raw
+========================================
+1. Aligning reads...
+[M::main::0.003*1.03] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.003*1.03] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.003*1.03] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::worker_pipeline::3.414*0.99] mapped 10000 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -t  -ax map-ont -o /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/01_alignments/43569_raw.sam /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/raw_fastq/43569_raw.fastq.gz
+[M::main] Real time: 3.415 sec; CPU: 3.375 sec; Peak RSS: 0.025 GB
+2. Converting SAM to BAM...
+3. Sorting BAM...
+4. Alignment QC...
+5. Calculating coverage...
+6. Adding MD tags...
+7. Creating filtered SAM...
+8. Creating mpileup...
+[mpileup] 1 samples in 1 input files
+[mpileup] Max depth set to maximum value (2147483647)
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+10. Extracting read-level variants...
+Read-level variants written to:
+  /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/07_read_analysis/43569_raw.read_variants.tsv
+
+Finished: 43569_raw
+
+
+========================================
+Processing: 43604_raw
+========================================
+1. Aligning reads...
+[M::main::0.018*0.14] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.019*0.15] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.019*0.15] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::worker_pipeline::3.570*0.98] mapped 10000 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -t  -ax map-ont -o /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/01_alignments/43604_raw.sam /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/raw_fastq/43604_raw.fastq.gz
+[M::main] Real time: 3.572 sec; CPU: 3.510 sec; Peak RSS: 0.025 GB
+2. Converting SAM to BAM...
+3. Sorting BAM...
+4. Alignment QC...
+5. Calculating coverage...
+6. Adding MD tags...
+7. Creating filtered SAM...
+8. Creating mpileup...
+[mpileup] 1 samples in 1 input files
+[mpileup] Max depth set to maximum value (2147483647)
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+10. Extracting read-level variants...
+Read-level variants written to:
+  /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/07_read_analysis/43604_raw.read_variants.tsv
+
+Finished: 43604_raw
+
+
+========================================
+Processing: 43605_raw
+========================================
+1. Aligning reads...
+[M::main::0.003*0.93] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.003*0.93] mid_occ = 10
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.003*0.94] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::worker_pipeline::3.422*0.99] mapped 10000 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -t  -ax map-ont -o /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/01_alignments/43605_raw.sam /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/raw_fastq/43605_raw.fastq.gz
+[M::main] Real time: 3.424 sec; CPU: 3.383 sec; Peak RSS: 0.025 GB
+2. Converting SAM to BAM...
+3. Sorting BAM...
+4. Alignment QC...
+5. Calculating coverage...
+6. Adding MD tags...
+7. Creating filtered SAM...
+8. Creating mpileup...
+[mpileup] 1 samples in 1 input files
+[mpileup] Max depth set to maximum value (2147483647)
+9. Calling conventional variants...
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+10. Extracting read-level variants...
+Read-level variants written to:
+  /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/07_read_analysis/43605_raw.read_variants.tsv
+
+Finished: 43605_raw
+
+2026-09-29 12:30:01 : ended job 
+Runtime: 0:1:49

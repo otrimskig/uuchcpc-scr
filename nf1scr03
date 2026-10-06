@@ -1,0 +1,831 @@
+#!/bin/bash
+#SBATCH --job-name=nf1regiongo
+#SBATCH --ntasks=20
+#SBATCH --mem=50gb
+#SBATCH --time=01:00:00
+#SBATCH --partition=notchpeak-guest
+#SBATCH --account=owner-guest
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=garrett.otrimski@hci.utah.edu
+#SBATCH --output=/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/scr/outs/slurm-%j.out
+
+
+
+#create start timestamps.
+start_time=$(date +%s)
+echo "$(date "+%Y-%m-%d %H:%M:%S") : started job "
+
+
+# Define the directory path
+directory="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/21403"
+
+cd ${directory}
+
+#load modules
+module load minimap2
+module load fastqc
+module load samtools
+module load bcftools
+module load seqkit
+
+echo ""
+echo ""
+echo ""
+
+
+# Give reference a simple sequence name
+REF="/uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/refs/nf1crisprfasta_new.fasta"
+
+#set other locations.
+FASTQ_DIR="$directory/raw_fastq"
+
+OUT="$directory/results"
+
+
+# ============================================================
+# DIRECTORIES
+# ============================================================
+
+mkdir -p "$OUT"/{reference,bam,vcf,coverage,qc,tables,read_analysis,logs}
+
+
+# ------------------------------------------------------------
+# Alignment / quality thresholds
+# ------------------------------------------------------------
+
+MIN_MAPQ=20
+
+MIN_BQ=10
+
+MAX_DEPTH=0
+
+
+echo ""
+echo ""
+echo ""
+# -----------------------------
+# Index reference
+# -----------------------------
+
+samtools faidx "$REF"
+
+minimap2 -d "$REF.mmi" "$REF"
+
+
+
+echo ""
+echo ""
+# -----------------------------
+# Index reference
+# -----------------------------
+
+samtools faidx "$REF"
+minimap2 -d "$REF.mmi" "$REF"
+
+
+# -----------------------------
+# Create output directories
+# -----------------------------
+
+mkdir -p \
+    "$OUT/01_alignments" \
+    "$OUT/02_bam" \
+    "$OUT/03_calmd" \
+    "$OUT/04_coverage" \
+    "$OUT/05_pileup" \
+    "$OUT/06_vcf" \
+    "$OUT/07_read_analysis"
+
+
+# -----------------------------
+# Process each FASTQ
+# -----------------------------
+
+for FASTQ in \
+    "$FASTQ_DIR"/*.fastq.gz \
+    "$FASTQ_DIR"/*.fq.gz \
+    "$FASTQ_DIR"/*.fastq \
+    "$FASTQ_DIR"/*.fq
+do
+    [ -e "$FASTQ" ] || continue
+
+    BASENAME=$(basename "$FASTQ")
+
+    SAMPLE="${BASENAME%.fastq.gz}"
+    SAMPLE="${SAMPLE%.fq.gz}"
+    SAMPLE="${SAMPLE%.fastq}"
+    SAMPLE="${SAMPLE%.fq}"
+
+    echo
+    echo "========================================"
+    echo "Processing: $SAMPLE"
+    echo "========================================"
+
+
+    # -----------------------------
+    # 1. Align reads
+    # -----------------------------
+    #
+    # Keep the raw SAM so you can inspect
+    # exactly what minimap2 produced.
+    #
+
+    SAM="$OUT/01_alignments/${SAMPLE}.sam"
+
+    echo "1. Aligning reads..."
+
+    minimap2 \
+        -t "$THREADS" \
+        -ax map-ont \
+        "$REF.mmi" \
+        "$FASTQ" \
+        -o "$SAM"
+
+
+    # -----------------------------
+    # 2. Convert SAM -> BAM
+    # -----------------------------
+
+    BAM="$OUT/02_bam/${SAMPLE}.bam"
+
+    echo "2. Converting SAM to BAM..."
+
+    samtools view \
+        -b \
+        -o "$BAM" \
+        "$SAM"
+
+
+    # -----------------------------
+    # 3. Sort BAM
+    # -----------------------------
+
+    SORTED_BAM="$OUT/02_bam/${SAMPLE}.sorted.bam"
+
+    echo "3. Sorting BAM..."
+
+    samtools sort \
+        -@ "$THREADS" \
+        -o "$SORTED_BAM" \
+        "$BAM"
+
+    samtools index "$SORTED_BAM"
+
+
+    # -----------------------------
+    # 4. Basic alignment QC
+    # -----------------------------
+
+    echo "4. Alignment QC..."
+
+    samtools flagstat \
+        "$SORTED_BAM" \
+        > "$OUT/02_bam/${SAMPLE}.flagstat.txt"
+
+    samtools stats \
+        "$SORTED_BAM" \
+        > "$OUT/02_bam/${SAMPLE}.stats.txt"
+
+
+    # -----------------------------
+    # 5. Coverage
+    # -----------------------------
+
+    DEPTH="$OUT/04_coverage/${SAMPLE}.depth.tsv"
+
+    echo "5. Calculating coverage..."
+
+    samtools depth \
+        -aa \
+        "$SORTED_BAM" \
+        > "$DEPTH"
+
+
+    # -----------------------------
+    # 6. Add MD tags
+    # -----------------------------
+    #
+    # MD tags let us identify reference-vs-read
+    # mismatches without relying on bcftools.
+    #
+
+    CALMD_BAM="$OUT/03_calmd/${SAMPLE}.calmd.bam"
+
+    echo "6. Adding MD tags..."
+
+    samtools calmd \
+        -b \
+        "$SORTED_BAM" \
+        "$REF" \
+        > "$CALMD_BAM"
+
+    samtools index "$CALMD_BAM"
+
+
+    # -----------------------------
+    # 7. Make filtered SAM
+    # -----------------------------
+    #
+    # This becomes the main debugging file
+    # for read-level analysis.
+    #
+    # 2308 =
+    #   4     unmapped
+    #   256   secondary
+    #   2048  supplementary
+    #
+    # -q filters low MAPQ alignments.
+    #
+
+    FILTERED_SAM="$OUT/07_read_analysis/${SAMPLE}.filtered.sam"
+
+    echo "7. Creating filtered SAM..."
+
+    samtools view \
+        -F 2308 \
+        -q "$MIN_MAPQ" \
+        -o "$FILTERED_SAM" \
+        "$CALMD_BAM"
+
+
+    # -----------------------------
+    # 8. Create conventional pileup
+    # -----------------------------
+    #
+    # This is useful for ordinary
+    # position-level variant calling,
+    # but NOT for preserving read linkage.
+    #
+
+    PILEUP_BCF="$OUT/05_pileup/${SAMPLE}.mpileup.bcf"
+
+    echo "8. Creating mpileup..."
+
+    bcftools mpileup \
+        -f "$REF" \
+        -q "$MIN_MAPQ" \
+        -Q "$MIN_BQ" \
+        -d "$MAX_DEPTH" \
+        -Ob \
+        -o "$PILEUP_BCF" \
+        "$CALMD_BAM"
+
+
+    # -----------------------------
+    # 9. Conventional VCF
+    # -----------------------------
+
+    VCF="$OUT/06_vcf/${SAMPLE}.vcf.gz"
+
+    echo "9. Calling conventional variants..."
+
+    bcftools call \
+        -mv \
+        -Oz \
+        -o "$VCF" \
+        "$PILEUP_BCF"
+
+    bcftools index -f "$VCF"
+
+
+    # -----------------------------
+    # 10. Extract read-level variants
+    # -----------------------------
+    #
+    # IMPORTANT:
+    # This does NOT collapse observations by
+    # genomic position.
+    #
+    # Each row retains the read ID.
+    #
+
+    READ_VARIANTS="$OUT/07_read_analysis/${SAMPLE}.read_variants.tsv"
+
+    echo "10. Extracting read-level variants..."
+
+    perl - \
+        "$FILTERED_SAM" \
+        "$REF" \
+        "$SAMPLE" \
+        "$READ_VARIANTS" \
+        "$TARGET_START" \
+        "$TARGET_END" \
+        "$MIN_BQ" \
+        <<'PERL'
+
+use strict;
+use warnings;
+
+my (
+    $sam_file,
+    $ref_file,
+    $sample,
+    $out_file,
+    $target_start,
+    $target_end,
+    $min_bq
+) = @ARGV;
+
+
+# --------------------------------------------------
+# Load reference sequence
+# --------------------------------------------------
+
+open(my $REF, "<", $ref_file)
+    or die "Cannot open reference $ref_file: $!";
+
+my $chrom = "";
+my $refseq = "";
+
+while (my $line = <$REF>) {
+    chomp $line;
+
+    if ($line =~ /^>(\S+)/) {
+        $chrom = $1;
+        next;
+    }
+
+    $line =~ s/\s+//g;
+    $refseq .= uc($line);
+}
+
+close $REF;
+
+die "Reference FASTA appears empty\n"
+    unless length($refseq);
+
+
+# --------------------------------------------------
+# Target region
+# --------------------------------------------------
+
+my $use_target = 0;
+
+if (
+    defined $target_start &&
+    defined $target_end &&
+    $target_start ne "" &&
+    $target_end ne ""
+) {
+    $use_target = 1;
+}
+
+
+# --------------------------------------------------
+# Open input/output
+# --------------------------------------------------
+
+open(my $SAM, "<", $sam_file)
+    or die "Cannot open SAM $sam_file: $!";
+
+open(my $OUT, ">", $out_file)
+    or die "Cannot write $out_file: $!";
+
+
+print $OUT join(
+    "\t",
+    qw(
+        sample
+        read_id
+        chrom
+        ref_pos
+        ref_base
+        alt_base
+        variant_type
+        base_quality
+        mapping_quality
+        cigar
+        strand
+    )
+), "\n";
+
+
+# --------------------------------------------------
+# Process each read
+# --------------------------------------------------
+
+while (my $line = <$SAM>) {
+
+    chomp $line;
+
+    next if $line =~ /^@/;
+    next if $line eq "";
+
+    my @f = split(/\t/, $line);
+
+    next unless @f >= 11;
+
+    my $read_id = $f[0];
+    my $flag    = $f[1];
+    my $rname   = $f[2];
+    my $pos     = $f[3];
+    my $mapq    = $f[4];
+    my $cigar   = $f[5];
+    my $seq     = uc($f[9]);
+    my $qual    = $f[10];
+
+    my $strand = ($flag & 16) ? "-" : "+";
+
+
+    # ----------------------------------------------
+    # Extract MD tag
+    # ----------------------------------------------
+
+    my $md = "";
+
+    for my $field (@f[11 .. $#f]) {
+        if ($field =~ /^MD:Z:(.+)$/) {
+            $md = $1;
+            last;
+        }
+    }
+
+    next if $md eq "";
+
+
+    # ----------------------------------------------
+    # Build reference-position -> query-position map
+    #
+    # Both positions are 1-based here.
+    # ----------------------------------------------
+
+    my %ref_to_query;
+
+    my $ref_pos  = $pos;
+    my $query_pos = 1;
+
+    while ($cigar =~ /(\d+)([MIDNSHP=X])/g) {
+
+        my $len = $1;
+        my $op  = $2;
+
+        if (
+            $op eq "M" ||
+            $op eq "=" ||
+            $op eq "X"
+        ) {
+
+            for my $i (0 .. $len - 1) {
+                $ref_to_query{$ref_pos + $i}
+                    = $query_pos + $i;
+            }
+
+            $ref_pos   += $len;
+            $query_pos += $len;
+        }
+
+        elsif ($op eq "I" || $op eq "S") {
+            $query_pos += $len;
+        }
+
+        elsif ($op eq "D" || $op eq "N") {
+            $ref_pos += $len;
+        }
+
+        elsif ($op eq "H" || $op eq "P") {
+            # consumes neither query nor reference
+        }
+    }
+
+
+    # ----------------------------------------------
+    # Parse MD tag for SNVs
+    # ----------------------------------------------
+
+    my $md_ref_pos = $pos;
+
+    while ($md =~ /(\d+|\^[A-Za-z]+|[A-Za-z])/g) {
+
+        my $token = $1;
+
+        # Match run
+        if ($token =~ /^\d+$/) {
+            $md_ref_pos += $token;
+            next;
+        }
+
+        # Deletion
+        if ($token =~ /^\^([A-Za-z]+)/) {
+            $md_ref_pos += length($1);
+            next;
+        }
+
+        # Single reference base = mismatch
+        my $ref_base = uc($token);
+
+        my $this_ref_pos = $md_ref_pos;
+
+        $md_ref_pos++;
+
+
+        # Outside requested target?
+        if ($use_target) {
+            next
+                if $this_ref_pos < $target_start ||
+                   $this_ref_pos > $target_end;
+        }
+
+
+        # Get corresponding query position
+        my $qpos = $ref_to_query{$this_ref_pos};
+
+        next unless defined $qpos;
+
+
+        # Query base
+        my $alt_base = substr(
+            $seq,
+            $qpos - 1,
+            1
+        );
+
+        next unless $alt_base =~ /^[ACGT]$/;
+
+
+        # Base quality
+        my $bq = 0;
+
+        if ($qual ne "*") {
+            my $qchar = substr(
+                $qual,
+                $qpos - 1,
+                1
+            );
+
+            $bq = ord($qchar) - 33;
+        }
+
+        next if $bq < $min_bq;
+
+
+        print $OUT join(
+            "\t",
+            $sample,
+            $read_id,
+            $rname,
+            $this_ref_pos,
+            $ref_base,
+            $alt_base,
+            "SNV",
+            $bq,
+            $mapq,
+            $cigar,
+            $strand
+        ), "\n";
+    }
+
+
+    # ----------------------------------------------
+    # Parse CIGAR again for insertions/deletions
+    # ----------------------------------------------
+
+    $ref_pos   = $pos;
+    $query_pos = 1;
+
+    while ($cigar =~ /(\d+)([MIDNSHP=X])/g) {
+
+        my $len = $1;
+        my $op  = $2;
+
+
+        # ------------------------------------------
+        # Match
+        # ------------------------------------------
+
+        if (
+            $op eq "M" ||
+            $op eq "=" ||
+            $op eq "X"
+        ) {
+            $ref_pos   += $len;
+            $query_pos += $len;
+        }
+
+
+        # ------------------------------------------
+        # Insertion
+        # ------------------------------------------
+
+        elsif ($op eq "I") {
+
+            my $anchor = $ref_pos - 1;
+
+            $anchor = 1 if $anchor < 1;
+
+            if (
+                !$use_target ||
+                (
+                    $anchor >= $target_start &&
+                    $anchor <= $target_end
+                )
+            ) {
+
+                my $ins_seq = substr(
+                    $seq,
+                    $query_pos - 1,
+                    $len
+                );
+
+                my $min_ins_bq = 999;
+
+                if ($qual ne "*") {
+
+                    for my $i (0 .. $len - 1) {
+
+                        my $qchar = substr(
+                            $qual,
+                            $query_pos - 1 + $i,
+                            1
+                        );
+
+                        my $q = ord($qchar) - 33;
+
+                        $min_ins_bq = $q
+                            if $q < $min_ins_bq;
+                    }
+                }
+                else {
+                    $min_ins_bq = 0;
+                }
+
+                if ($min_ins_bq >= $min_bq) {
+
+                    my $ref_base = (
+                        $anchor >= 1 &&
+                        $anchor <= length($refseq)
+                    )
+                    ? substr($refseq, $anchor - 1, 1)
+                    : "N";
+
+                    print $OUT join(
+                        "\t",
+                        $sample,
+                        $read_id,
+                        $rname,
+                        $anchor,
+                        $ref_base,
+                        "+$ins_seq",
+                        "INS",
+                        $min_ins_bq,
+                        $mapq,
+                        $cigar,
+                        $strand
+                    ), "\n";
+                }
+            }
+
+            $query_pos += $len;
+        }
+
+
+        # ------------------------------------------
+        # Deletion
+        # ------------------------------------------
+
+        elsif ($op eq "D") {
+
+            my $del_start = $ref_pos;
+
+            if (
+                !$use_target ||
+                (
+                    $del_start >= $target_start &&
+                    $del_start <= $target_end
+                )
+            ) {
+
+                my $del_seq = substr(
+                    $refseq,
+                    $del_start - 1,
+                    $len
+                );
+
+                if (length($del_seq) == $len) {
+
+                    print $OUT join(
+                        "\t",
+                        $sample,
+                        $read_id,
+                        $rname,
+                        $del_start,
+                        $del_seq,
+                        "-$del_seq",
+                        "DEL",
+                        ".",
+                        $mapq,
+                        $cigar,
+                        $strand
+                    ), "\n";
+                }
+            }
+
+            $ref_pos += $len;
+        }
+
+
+        # ------------------------------------------
+        # Skipped reference
+        # ------------------------------------------
+
+        elsif ($op eq "N") {
+            $ref_pos += $len;
+        }
+
+
+        # ------------------------------------------
+        # Soft clip
+        # ------------------------------------------
+
+        elsif ($op eq "S") {
+            $query_pos += $len;
+        }
+
+
+        # ------------------------------------------
+        # Hard clip / padding
+        # ------------------------------------------
+
+        elsif (
+            $op eq "H" ||
+            $op eq "P"
+        ) {
+            # nothing
+        }
+    }
+}
+
+close $SAM;
+close $OUT;
+
+PERL
+
+
+    # -----------------------------
+    # 11. Check read-level output
+    # -----------------------------
+
+    if [ -s "$READ_VARIANTS" ]
+    then
+        echo "Read-level variants written to:"
+        echo "  $READ_VARIANTS"
+    else
+        echo "WARNING: no read-level variants found for $SAMPLE"
+    fi
+
+
+    # -----------------------------
+    # 12. Read counts / quick checks / remove 2ndary alignments
+    # -----------------------------
+
+     samtools view \
+        -c \
+        "$SORTED_BAM" \
+        > "$OUT/02_bam/${SAMPLE}.total_alignments.txt"
+
+    samtools view \
+        -c \
+        -F 2308 \
+        "$CALMD_BAM" \
+        > "$OUT/03_calmd/${SAMPLE}.primary_mapped_count.txt"
+
+    # Remove secondary alignments for CrispRVariants
+    FILTERED_BAM="$OUT/03_calmd/${SAMPLE}.filtered.bam"
+
+    samtools view \
+        -b \
+        -F 256 \
+        "$CALMD_BAM" \
+        > "$FILTERED_BAM"
+
+    samtools index \
+        "$FILTERED_BAM"
+
+    echo
+    echo "Finished: $SAMPLE"
+    echo
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+done
+
+
+
+
+##########finish
+echo "$(date "+%Y-%m-%d %H:%M:%S") : ended job "
+
+end_time=$(date +%s)
+runtime=$((end_time - start_time))
+hours=$((runtime / 3600))
+minutes=$(( (runtime % 3600) / 60 ))
+seconds=$((runtime % 60))
+
+echo "Runtime: $hours:$minutes:$seconds"

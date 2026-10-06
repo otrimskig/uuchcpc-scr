@@ -1,0 +1,28 @@
+2026-09-29 11:59:46 : started job 
+
+
+
+[M::mm_idx_gen::0.002*1.15] collected minimizers
+[M::mm_idx_gen::0.003*1.34] sorted minimizers
+[M::main::0.003*1.28] loaded/built the index for 1 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.003*1.28] distinct minimizers: 673 (100.00% are singletons); average occurrences: 1.000; average spacing: 5.428; total length: 3653
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -d /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/nf1crisprfasta_new.fasta
+[M::main] Real time: 0.004 sec; CPU: 0.004 sec; Peak RSS: 0.003 GB
+
+======================================
+Preparing reference
+======================================
+[31m[ERRO][0m stat : no such file or directory
+[faidx] Could not build fai index /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/reference/amplicon.fasta.fai
+[M::mm_idx_gen::0.001*1.28] collected minimizers
+[M::mm_idx_gen::0.002*1.54] sorted minimizers
+[M::main::0.002*1.43] loaded/built the index for 0 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 0
+[M::mm_idx_stat::0.002*1.42] distinct minimizers: 0 (-nan% are singletons); average occurrences: -nan; average spacing: -nan; total length: 0
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -d /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/reference/amplicon.fasta.mmi /uufs/chpc.utah.edu/common/home/holmen-group1/otrimskig/exp_data/genewiz/83338/results/reference/amplicon.fasta
+[M::main] Real time: 0.003 sec; CPU: 0.003 sec; Peak RSS: 0.002 GB
+2026-09-29 11:59:52 : ended job 
+Runtime: 0:0:6
